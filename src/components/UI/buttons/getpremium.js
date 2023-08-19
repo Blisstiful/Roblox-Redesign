@@ -1,5 +1,4 @@
 import React from "react";
-import style from "./getpremium.module.css";
 
 const GetPremium = () =>{
     return(

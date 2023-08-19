@@ -1,20 +1,21 @@
 import React from "react";
 import style from "./home.module.css";
+import * as All from "../components/index";
 
 const Home = () =>{
     return(
 
         <React.Fragment>
 
-            {/* NAVBAR GOES HERE */}
+            <All.NavBar />
 
             <main>
 
-                <section id={style["nav-menu"]}>
+                <aside id={style["nav-menu"]}>
 
                     <p>navmenu</p>
 
-                </section>
+                </aside>
 
                 <section id={style["games"]}>
 
@@ -24,7 +25,7 @@ const Home = () =>{
 
                         <ul>
 
-                            <li>Continue</li>
+                            <li className={style["current"]}>Continue</li>
                             <li>Favorites</li>
                             <li>Recommended</li>
                             <li>More</li>
@@ -34,6 +35,49 @@ const Home = () =>{
                     </div>
 
                     <ul id={style["games-list"]}>
+
+                        <Game
+                        title="Phantom Forces"
+                        thumbnail="something.jpg"
+                        alt="Logo for Phantom Forces"
+                        likes="80%"
+                        playing="5k"
+                        />
+
+                        <Game
+                        title="Phantom Forces"
+                        thumbnail="something.jpg"
+                        alt="Logo for Phantom Forces"
+                        likes="80%"
+                        playing="5k"
+                        />
+
+                        
+                        <Game
+                        title="Phantom Forces"
+                        thumbnail="something.jpg"
+                        alt="Logo for Phantom Forces"
+                        likes="80%"
+                        playing="5k"
+                        />
+
+                        
+                        <Game
+                        title="Phantom Forces"
+                        thumbnail="something.jpg"
+                        alt="Logo for Phantom Forces"
+                        likes="80%"
+                        playing="5k"
+                        />
+
+                        
+                        <Game
+                        title="Phantom Forces"
+                        thumbnail="something.jpg"
+                        alt="Logo for Phantom Forces"
+                        likes="80%"
+                        playing="5k"
+                        />
 
                         <Game
                         title="Phantom Forces"
@@ -62,7 +106,7 @@ const Home = () =>{
     );
 };
 
-const Game = (title, thumbnail, alt, likes, playing) =>{
+const Game = ({title, thumbnail, alt, likes, playing}) =>{
     return(
 
         <li>
@@ -71,8 +115,12 @@ const Game = (title, thumbnail, alt, likes, playing) =>{
 
             <img src={thumbnail} alt={alt}/>
 
-            <p>{likes}</p>
-            <p>{playing}</p>
+            <div>
+
+                <p>{likes}</p>
+                <p>{playing}</p>
+
+            </div>
 
         </li>
 

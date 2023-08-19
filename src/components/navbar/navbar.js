@@ -3,7 +3,15 @@ import style from "./navbar.module.css";
 
 const NavBar = () =>{
     return(
-        <p>Navbar</p>
+        <header>
+
+            <nav id={style["navbar"]}>
+
+                <p>navbar</p>
+
+            </nav>
+
+        </header>
     );
 };
 
