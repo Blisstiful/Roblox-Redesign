@@ -2,6 +2,8 @@ import React from "react";
 import style from "./home.module.css";
 import * as All from "../components/index";
 
+import image from "../images/something.jpg";
+
 const Home = () =>{
     return(
 
@@ -17,77 +19,145 @@ const Home = () =>{
 
                 </aside>
 
-                <section id={style["games"]}>
+                <section id={style["middle"]}>
 
-                    <div id={style["games-nav"]}>
+                    <div id={style["top"]}>
 
-                        <p>Games</p>
+                        <h1>Home</h1>
 
-                        <ul>
+                        <input type="text" placeholder="placeholder" id={style["searchbar"]}></input>
 
-                            <li className={style["current"]}>Continue</li>
-                            <li>Favorites</li>
-                            <li>Recommended</li>
-                            <li>More</li>
+                    </div>
+
+                    <div id={style["games"]}>
+
+                        <div id={style["games-nav"]}>
+
+                            <p>Games</p>
+
+                            <ul>
+
+                                <li className={style["current"]}>Continue</li>
+                                <li>Favorites</li>
+                                <li>Recommended</li>
+                                <li>More</li>
+
+                            </ul>
+
+                        </div>
+
+                        <ul id={style["games-list"]}>
+
+                            <Game
+                            title="Phantom Forces"
+                            thumbnail={image}
+                            alt="Logo for Phantom Forces"
+                            likes="80%"
+                            playing="5k"
+                            />
+
+                            <Game
+                            title="Phantom Forces"
+                            thumbnail={image}
+                            alt="Logo for Phantom Forces"
+                            likes="80%"
+                            playing="5k"
+                            />
+
+                            
+                            <Game
+                            title="Phantom Forces"
+                            thumbnail={image}
+                            alt="Logo for Phantom Forces"
+                            likes="80%"
+                            playing="5k"
+                            />
+
+                            
+                            <Game
+                            title="Phantom Forces"
+                            thumbnail={image}
+                            alt="Logo for Phantom Forces"
+                            likes="80%"
+                            playing="5k"
+                            />
+
+                            
+                            <Game
+                            title="Phantom Forces long title long title long title long title"
+                            thumbnail={image}
+                            alt="Logo for Phantom Forces"
+                            likes="80%"
+                            playing="5k"
+                            />
+
+                            <Game
+                            title="Phantom Forces"
+                            thumbnail={image}
+                            alt="Logo for Phantom Forces"
+                            likes="80%"
+                            playing="5k"
+                            />
+
+                            <Game
+                            title="Phantom Forces"
+                            thumbnail={image}
+                            alt="Logo for Phantom Forces"
+                            likes="80%"
+                            playing="5k"
+                            />
+
+                            <Game
+                            title="Phantom Forces"
+                            thumbnail={image}
+                            alt="Logo for Phantom Forces"
+                            likes="80%"
+                            playing="5k"
+                            />
+
+                            <Game
+                            title="Phantom Forces"
+                            thumbnail={image}
+                            alt="Logo for Phantom Forces"
+                            likes="80%"
+                            playing="5k"
+                            />
+
+                            <Game
+                            title="Phantom Forces"
+                            thumbnail={image}
+                            alt="Logo for Phantom Forces"
+                            likes="80%"
+                            playing="5k"
+                            />
+
+                            <Game
+                            title="Phantom Forces"
+                            thumbnail={image}
+                            alt="Logo for Phantom Forces"
+                            likes="80%"
+                            playing="5k"
+                            />
+
+                            <Game
+                            title="Phantom Forces"
+                            thumbnail={image}
+                            alt="Logo for Phantom Forces"
+                            likes="80%"
+                            playing="5k"
+                            />
+
+                            <Game
+                            title="Phantom Forces"
+                            thumbnail={image}
+                            alt="Logo for Phantom Forces"
+                            likes="80%"
+                            playing="5k"
+                            />
 
                         </ul>
 
                     </div>
-
-                    <ul id={style["games-list"]}>
-
-                        <Game
-                        title="Phantom Forces"
-                        thumbnail="something.jpg"
-                        alt="Logo for Phantom Forces"
-                        likes="80%"
-                        playing="5k"
-                        />
-
-                        <Game
-                        title="Phantom Forces"
-                        thumbnail="something.jpg"
-                        alt="Logo for Phantom Forces"
-                        likes="80%"
-                        playing="5k"
-                        />
-
-                        
-                        <Game
-                        title="Phantom Forces"
-                        thumbnail="something.jpg"
-                        alt="Logo for Phantom Forces"
-                        likes="80%"
-                        playing="5k"
-                        />
-
-                        
-                        <Game
-                        title="Phantom Forces"
-                        thumbnail="something.jpg"
-                        alt="Logo for Phantom Forces"
-                        likes="80%"
-                        playing="5k"
-                        />
-
-                        
-                        <Game
-                        title="Phantom Forces"
-                        thumbnail="something.jpg"
-                        alt="Logo for Phantom Forces"
-                        likes="80%"
-                        playing="5k"
-                        />
-
-                        <Game
-                        title="Phantom Forces"
-                        thumbnail="something.jpg"
-                        alt="Logo for Phantom Forces"
-                        likes="80%"
-                        playing="5k"
-                        />
-
-                    </ul>
 
                 </section>
 
@@ -111,14 +181,14 @@ const Game = ({title, thumbnail, alt, likes, playing}) =>{
 
         <li>
 
-            <p>{title}</p>
+            <p className={style["temp-one"]}>{title}</p>
 
             <img src={thumbnail} alt={alt}/>
 
             <div>
 
-                <p>{likes}</p>
-                <p>{playing}</p>
+                <p className={style["temp-two"]}>{likes}</p>
+                <p className={style["temp-two"]}>{playing}</p>
 
             </div>
 

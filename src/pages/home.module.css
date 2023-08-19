@@ -1,7 +1,7 @@
 main{
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: minmax(0.2fr, 0.5fr) 0.65fr 0.15fr;
+    grid-template-columns: 0.2fr 0.65fr 0.15fr;
     /*
     Look over this tmrw: 
     https://stackoverflow.com/questions/46000676/auto-fit-and-minmax-dont-work-inside-nested-grid
@@ -10,9 +10,20 @@ main{
     width: 100%;
 }
 
+#middle{
+    display: flex;
+    flex-direction: column;
+}
+
+#top{
+    display: flex;
+    flex-direction: column;
+}
+
 #games{
     display: flex;
     flex-direction: column;
+    overflow: hidden; /*Not working*/
 }
 
 /* GAMES HEADER */
@@ -20,7 +31,7 @@ main{
 #games-nav{
     display: flex;
     flex-direction: column;
-    height: 20%;
+    height: 7.5%;
     width: 100%;
 }
 
@@ -39,17 +50,48 @@ main{
 #games-list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(auto-fit, 14rem);
+    grid-template-rows: repeat(auto-fit, 16rem);
     height: calc(80% - 1rem);
     width: calc(100% - 1rem);
     padding: 1em;
+    overflow-y: scroll; /*Not working*/
 }
 
 #games-list li{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 14rem;
     width: 9rem;
     padding: 1rem;
     border-radius: 1rem;
+}
+
+.temp-one{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.2em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+#games-list li img{
+    height: 10em;
+    width: 10em;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+#games-list li div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.temp-two{
+    font-size: 1.1em;
 }
