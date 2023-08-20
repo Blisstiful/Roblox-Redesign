@@ -11,6 +11,7 @@ body{
     margin: 0;
     height: 100%;
     width: 100%;
+    overflow: hidden; /* Cheap trick to get scrolling working, needs to be updated later on*/
 }
 
 #root{
@@ -29,4 +30,8 @@ ul{
 
 li{
     all: unset;
+}
+
+a{
+    cursor: pointer;
 }

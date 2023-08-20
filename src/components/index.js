@@ -6,10 +6,13 @@ import NavMenu from "./UI/menus/navmenu";
 
 import GetPremium from "./UI/buttons/getpremium";
 
+import Searchbar from "./UI/misc/searchbar";
+
 export{
     Footer, 
     NavBar, 
     Settings,
     NavMenu,
-    GetPremium
+    GetPremium,
+    Searchbar
 }

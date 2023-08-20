@@ -10,6 +10,11 @@ main{
     width: 100%;
 }
 
+#nav-menu{
+    display: flex;
+    flex-direction: column;
+}
+
 #middle{
     display: flex;
     flex-direction: column;
@@ -23,7 +28,6 @@ main{
 #games{
     display: flex;
     flex-direction: column;
-    overflow: hidden; /*Not working*/
 }
 
 /* GAMES HEADER */
@@ -38,7 +42,11 @@ main{
 #games-nav ul{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 30%;
+}
+
+#games-nav button{
+    cursor: pointer;
 }
 
 .current{
@@ -52,8 +60,7 @@ main{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(auto-fit, 16rem);
     height: calc(80% - 1rem);
-    width: calc(100% - 1rem);
-    padding: 1em;
+    width: 100%;
     overflow-y: scroll; /*Not working*/
 }
 
@@ -66,6 +73,7 @@ main{
     width: 9rem;
     padding: 1rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .temp-one{
@@ -94,4 +102,24 @@ main{
 
 .temp-two{
     font-size: 1.1em;
+}
+
+/*Friends*/
+
+#friends-list{
+    display: flex;
+    flex-direction: column;
+}
+
+#friends-list img{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#friends-list a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

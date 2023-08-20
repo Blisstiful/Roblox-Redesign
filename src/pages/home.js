@@ -5,6 +5,8 @@ import * as All from "../components/index";
 import image from "../images/something.jpg";
 
 const Home = () =>{
+    let amountoffriends = 32;
+
     return(
 
         <React.Fragment>
@@ -15,7 +17,25 @@ const Home = () =>{
 
                 <aside id={style["nav-menu"]}>
 
-                    <p>navmenu</p>
+                    {/* something navigationy or something */}
+                    <a href="google.com">Home</a>
+                    <a href="google.com">Profile</a>
+
+                    {/* SOCIAL */}
+                    <a href="google.com">Messages</a>
+                    <a href="google.com">Friends</a>
+                    <a href="google.com">Groups</a>
+
+                    {/* ITEMS AND CUSTOMIZATION */}
+                    <a href="google.com">Avatar</a>
+                    <a href="google.com">Inventory</a>
+                    <a href="google.com">Trade</a>
+                    <a href="google.com">Transactions</a>
+
+                    {/* OFFICIAL */}
+                    <a href="google.com">Blog</a>
+                    <a href="google.com">Official Store</a>
+                    <a href="google.com">Giftcards</a>
 
                 </aside>
 
@@ -25,7 +45,7 @@ const Home = () =>{
 
                         <h1>Home</h1>
 
-                        <input type="text" placeholder="placeholder" id={style["searchbar"]}></input>
+                        <All.Searchbar />
 
                     </div>
 
@@ -37,10 +57,10 @@ const Home = () =>{
 
                             <ul>
 
-                                <li className={style["current"]}>Continue</li>
-                                <li>Favorites</li>
-                                <li>Recommended</li>
-                                <li>More</li>
+                                <li className={style["current"]}><button>Continue</button></li>
+                                <li><button>Favorites</button></li>
+                                <li><button>Recommended</button></li>
+                                <li><button>More </button></li>
 
                             </ul>
 
@@ -147,14 +167,6 @@ const Home = () =>{
                             playing="5k"
                             />
 
-                            <Game
-                            title="Phantom Forces"
-                            thumbnail={image}
-                            alt="Logo for Phantom Forces"
-                            likes="80%"
-                            playing="5k"
-                            />
-
                         </ul>
 
                     </div>
@@ -163,7 +175,47 @@ const Home = () =>{
 
                 <section id={style["friends"]}>
 
-                    <p>friends</p>
+                    <h2>Friends ({amountoffriends})</h2>
+
+                    <ul id={style["friends-list"]}> 
+
+                        <Friend 
+                        headshot={image}
+                        name="friend123"
+                        link="google.com"
+                        />
+
+                        <Friend 
+                        headshot={image}
+                        name="friend123"
+                        link="google.com"
+                        />
+
+                        <Friend 
+                        headshot={image}
+                        name="friend123"
+                        link="google.com"
+                        />
+
+                        <Friend 
+                        headshot={image}
+                        name="friend123"
+                        link="google.com"
+                        />
+
+                        <Friend 
+                        headshot={image}
+                        name="friend123"
+                        link="google.com"
+                        />
+
+                        <Friend 
+                        headshot={image}
+                        name="friend123"
+                        link="google.com"
+                        />
+
+                    </ul>
 
                 </section>
 
@@ -176,6 +228,7 @@ const Home = () =>{
     );
 };
 
+//wrap all of this in an anchor tag and make sure to fix the styles when that happens 
 const Game = ({title, thumbnail, alt, likes, playing}) =>{
     return(
 
@@ -194,6 +247,20 @@ const Game = ({title, thumbnail, alt, likes, playing}) =>{
 
         </li>
 
+    );
+};
+
+// Will need to add activity status here as well, maybe as a pseudo element
+const Friend = ({headshot, name, link}) =>{
+    return(
+        <li>
+            <a href={link}>
+
+                <img src={headshot} alt={name}/>
+                {name}
+
+            </a>
+        </li>
     );
 };
 
