@@ -15,29 +15,7 @@ const Home = () =>{
 
             <main>
 
-                <aside id={style["nav-menu"]}>
-
-                    {/* something navigationy or something */}
-                    <a href="google.com">Home</a>
-                    <a href="google.com">Profile</a>
-
-                    {/* SOCIAL */}
-                    <a href="google.com">Messages</a>
-                    <a href="google.com">Friends</a>
-                    <a href="google.com">Groups</a>
-
-                    {/* ITEMS AND CUSTOMIZATION */}
-                    <a href="google.com">Avatar</a>
-                    <a href="google.com">Inventory</a>
-                    <a href="google.com">Trade</a>
-                    <a href="google.com">Transactions</a>
-
-                    {/* OFFICIAL */}
-                    <a href="google.com">Blog</a>
-                    <a href="google.com">Official Store</a>
-                    <a href="google.com">Giftcards</a>
-
-                </aside>
+                <All.NavMenu />
 
                 <section id={style["middle"]}>
 

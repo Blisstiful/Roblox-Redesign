@@ -1,0 +1,26 @@
+#nav-menu{
+    display: grid;
+    grid-column: repeat(4, 1fr)/1fr;
+    background-color: rgb(240, 240, 240);
+    /*use boxshadow here*/
+}
+
+#nav-menu div{
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-menu div p{
+    margin-bottom: 0.25em;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+#nav-menu div a{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+#nav-menu div > *{
+    margin-left: 1rem;
+}

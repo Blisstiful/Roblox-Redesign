@@ -10,11 +10,6 @@ main{
     width: 100%;
 }
 
-#nav-menu{
-    display: flex;
-    flex-direction: column;
-}
-
 #middle{
     display: flex;
     flex-direction: column;

@@ -1,3 +1,50 @@
 #navbar{
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
+    align-items: center;
     height: var(--navbar-height);
+    width: 100%;
+}
+
+#left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+}
+
+#right{
+    display: flex;
+    justify-content: right;
+    height: 100%;
+}
+
+#left :first-child{
+    margin-left: 1em;
+}
+
+#right :last-child{
+    margin-right: 1em;
+}
+
+#nav-menu-btn{
+    background-color: black;
+}
+
+#navbar #left a{
+    margin: 0 0.5em;
+}
+
+#headshot{
+    display: flex;
+    justify-self: right;
+    align-items: center;
+}
+
+#headshot img{
+    height: 2.5em;
+    width: 2.5em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 0.25em;
 }
