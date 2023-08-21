@@ -31,7 +31,7 @@ const Home = () =>{
 
                         <div id={style["games-nav"]}>
 
-                            <p>Games</p>
+                            <h2>Games</h2>
 
                             <ul>
 

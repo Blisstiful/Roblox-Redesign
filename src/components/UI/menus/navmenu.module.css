@@ -1,13 +1,15 @@
 #nav-menu{
-    display: grid;
-    grid-column: repeat(4, 1fr)/1fr;
-    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    background-color: #191b1d;
     /*use boxshadow here*/
 }
 
 #nav-menu div{
     display: flex;
     flex-direction: column;
+    height: 25%;
+    width: 100%;
 }
 
 #nav-menu div p{

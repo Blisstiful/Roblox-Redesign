@@ -1,0 +1,28 @@
+#input-group{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+    outline: 1px solid var(--light-grey);
+}
+
+#input-group svg{
+    margin-left: 1rem;
+    color: var(--text-color);
+}
+
+#searchbar{
+    margin-left: 0.25rem;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: var(--light-grey-2);
+    caret-color: var(--text-color);
+}
+
+#searchbar:focus{
+    outline: none;
+}

@@ -10,6 +10,10 @@ main{
     width: 100%;
 }
 
+main h2{
+    font-size: var(--h2);
+}
+
 #middle{
     display: flex;
     flex-direction: column;
@@ -40,12 +44,17 @@ main{
     width: 30%;
 }
 
+#games-nav h2, #games-nav button{
+    margin-left: 1rem;
+}
+
 #games-nav button{
     cursor: pointer;
 }
 
 .current{
     text-decoration: underline;
+    text-decoration-color: var(--text-color);
 }
 
 /* LIST ITEMS OF GAMES */
