@@ -212,14 +212,21 @@ const Game = ({title, thumbnail, alt, likes, playing}) =>{
 
         <li>
 
-            <p className={style["temp-one"]}>{title}</p>
-
             <img src={thumbnail} alt={alt}/>
+            <p className={style["game-title"]}>{title}</p>
 
             <div>
 
-                <p className={style["temp-two"]}>{likes}</p>
-                <p className={style["temp-two"]}>{playing}</p>
+                
+                <p className={style["temp-two"]}>
+                    <span class={style["likes-icon"]}></span>
+                    {likes}
+                </p>
+
+                <p className={style["temp-two"]}>
+                    <span class={style["players-icon"]}></span>
+                    {playing}    
+                </p>
 
             </div>
 

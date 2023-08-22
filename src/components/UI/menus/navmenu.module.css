@@ -8,8 +8,9 @@
 #nav-menu div{
     display: flex;
     flex-direction: column;
-    height: 25%;
-    width: 100%;
+    margin: 0.75em 0 0.75em 1em;
+
+    width: 50%;
 }
 
 #nav-menu div p{
@@ -19,10 +20,70 @@
 }
 
 #nav-menu div a{
+    margin-bottom: 0.1em;
     font-size: 1.2em;
     font-weight: 400;
 }
 
-#nav-menu div > *{
-    margin-left: 1rem;
+/* ICONS */
+
+.house-icon, .profile-icon, .messages-icon, .friends-icon, .groups-icon, .avatar-icon, .inventory-icon, .trade-icon,
+.blog-icon, .store-icon, .giftcard-icon{
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+}
+
+.house-icon{
+    background-position: 0 -140px;
+}
+
+.profile-icon{
+    background-position: -28px -168px;
+}
+
+.messages-icon{
+    background-position: -28px -196px;
+}
+
+.friends-icon{
+    background-position: -28px -224px;
+}
+
+.groups-icon{
+    background-position: -28px -336px;
+}
+
+.avatar-icon{
+    background-position: -28px -252px;
+}
+
+.inventory-icon{
+    background-position: -28px -280px;
+}
+
+.trade-icon{
+    background-position: -28px -308px;
+}
+
+.blog-icon{
+    background-position: -28px -364px;
+}
+
+.store-icon{
+    background-position: -28px -420px;
+}
+
+.giftcard-icon{
+    background-position: -28px -504px;
+}
+
+@media (min-width: 1012px){
+    #nav-menu{
+        width: 15%;
+    }
 }

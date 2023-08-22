@@ -5,12 +5,20 @@ const NavMenu = () =>{
     return(
         <aside id={style["nav-menu"]}>
 
-            {/* something navigationy or something */}
+            {/* OVERVIEW */}
             <div>
 
-                <p>Placeholder</p>
-                <a href="google.com">Home</a>
-                <a href="google.com">Profile</a>
+                <p>Overview</p>
+
+                <a href="google.com">
+                    <span class={style["house-icon"]}></span>
+                    Home
+                </a>
+
+                <a href="google.com">
+                    <span class={style["profile-icon"]}></span>
+                    Profile
+                </a>
 
             </div>
 
@@ -18,19 +26,43 @@ const NavMenu = () =>{
             <div>
 
                 <p>Social</p>
-                <a href="google.com">Messages</a>
-                <a href="google.com">Friends</a>
-                <a href="google.com">Groups</a>
+
+                <a href="google.com">
+                    <span class={style["messages-icon"]}></span>
+                    Messages
+                </a>
+
+                <a href="google.com">
+                    <span class={style["friends-icon"]}></span>
+                    Friends
+                </a>
+
+                <a href="google.com">
+                    <span class={style["groups-icon"]}></span>
+                    Groups
+                </a>
 
             </div>
 
-            {/* ITEMS AND CUSTOMIZATION */}
+            {/* ACCOUNT */}
             <div>
 
-                <p>Items</p>
-                <a href="google.com">Avatar</a>
-                <a href="google.com">Inventory</a>
-                <a href="google.com">Trade</a>
+                <p>Account</p>
+
+                <a href="google.com">
+                    <span class={style["avatar-icon"]}></span>
+                    Avatar
+                </a>
+
+                <a href="google.com">
+                    <span class={style["inventory-icon"]}></span>
+                    Inventory
+                </a>
+
+                <a href="google.com">
+                    <span class={style["trade-icon"]}></span>
+                    Trade
+                </a>
                 <a href="google.com">Transactions</a>
 
             </div>
@@ -39,9 +71,21 @@ const NavMenu = () =>{
             <div>
 
                 <p>Official</p>
-                <a href="google.com">Blog</a>
-                <a href="google.com">Official Store</a>
-                <a href="google.com">Giftcards</a>
+
+                <a href="google.com">
+                    <span class={style["blog-icon"]}></span>
+                    Blog
+                </a>
+
+                <a href="google.com">
+                    <span class={style["store-icon"]}></span>
+                    Official Store
+                </a>
+                
+                <a href="google.com">
+                    <span class={style["giftcard-icon"]}></span>
+                    Giftcards
+                </a>
 
             </div>
 

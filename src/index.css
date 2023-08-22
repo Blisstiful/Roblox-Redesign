@@ -30,7 +30,6 @@ body{
     height: 100%;
     width: 100%;
     background-color: var(--bg);
-    overflow: hidden; /* Cheap trick to get scrolling working, needs to be updated later on*/
 }
 
 #root{
@@ -60,4 +59,9 @@ a{
 h1{
     font-size: var(--h1);
     font-weight: 700;
+}
+
+h2{
+    font-size: var(--h2);
+    font-weight: 600;
 }

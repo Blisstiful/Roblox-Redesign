@@ -1,27 +1,31 @@
 main{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 0.2fr 0.65fr 0.15fr;
-    /*
-    Look over this tmrw: 
-    https://stackoverflow.com/questions/46000676/auto-fit-and-minmax-dont-work-inside-nested-grid
-    */
+    display: flex;
     height: calc(100% - var(--navbar-height));
     width: 100%;
-}
-
-main h2{
-    font-size: var(--h2);
 }
 
 #middle{
     display: flex;
     flex-direction: column;
+    /*Min and max widths are used to be responsive here*/
 }
 
 #top{
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
+}
+
+#top h1{
+    margin-bottom: 0.75rem;
+}
+
+#top div{
+    margin-bottom: 1rem;
+}
+
+#top > *{
+    margin-left: 1rem;
 }
 
 #games{
@@ -34,14 +38,16 @@ main h2{
 #games-nav{
     display: flex;
     flex-direction: column;
-    height: 7.5%;
+    margin-bottom: 1rem;
     width: 100%;
+}
+
+#games-nav h2{
+    margin-bottom: 0.5rem;
 }
 
 #games-nav ul{
     display: flex;
-    justify-content: space-between;
-    width: 30%;
 }
 
 #games-nav h2, #games-nav button{
@@ -49,6 +55,8 @@ main h2{
 }
 
 #games-nav button{
+    font-size: 1.1rem;
+    font-weight: 500;
     cursor: pointer;
 }
 
@@ -61,11 +69,8 @@ main h2{
 
 #games-list{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(auto-fit, 16rem);
-    height: calc(80% - 1rem);
-    width: 100%;
-    overflow-y: scroll; /*Not working*/
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
 }
 
 #games-list li{
@@ -73,14 +78,13 @@ main h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 14rem;
-    width: 9rem;
-    padding: 1rem;
+    height: 15rem;
+    width: 10rem;
     border-radius: 1rem;
     cursor: pointer;
 }
 
-.temp-one{
+.game-title{
     width: 100%;
     margin-bottom: 0.5rem;
     font-size: 1.2em;
@@ -105,7 +109,28 @@ main h2{
 }
 
 .temp-two{
+    display: flex;
+    align-items: center;
     font-size: 1.1em;
+}
+
+.players-icon, .likes-icon{
+    display: inline-block;
+    vertical-align: middle;
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-size: 32px auto;
+}
+
+.players-icon{
+    background-position: 0 -48px;
+    background-image: url(https://images.rbxcdn.com/87b4f6103befbe2c1e9c13eb9d7064db-common_sm_dark_12032018.svg);
+}
+
+.likes-icon{
+    background-position: 0 -32px;
+    background-image: url(https://images.rbxcdn.com/87b4f6103befbe2c1e9c13eb9d7064db-common_sm_dark_12032018.svg);
 }
 
 /*Friends*/
@@ -126,4 +151,15 @@ main h2{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 1012px) {
+    #middle{
+        width: 70%;
+    }
+
+    #friends-list{
+        width: 15%;
+    }
+
 }
