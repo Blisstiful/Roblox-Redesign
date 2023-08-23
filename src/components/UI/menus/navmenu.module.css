@@ -9,18 +9,26 @@
     display: flex;
     flex-direction: column;
     margin: 0.75em 0 0.75em 1em;
-
     width: 50%;
 }
 
 #nav-menu div p{
-    margin-bottom: 0.25em;
     font-size: 1.4em;
     font-weight: 500;
 }
 
+#nav-menu div hr{
+    all: unset;
+    margin-bottom: 0.5em;
+    height: 0.1rem;
+    width: 10em;
+    background-color: var(--dark-grey);
+}
+
 #nav-menu div a{
-    margin-bottom: 0.1em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.15em;
     font-size: 1.2em;
     font-weight: 400;
 }
@@ -30,6 +38,7 @@
 .house-icon, .profile-icon, .messages-icon, .friends-icon, .groups-icon, .avatar-icon, .inventory-icon, .trade-icon,
 .blog-icon, .store-icon, .giftcard-icon{
     display: inline-block;
+    margin-right: 0.25rem;
     height: 28px;
     width: 28px;
     vertical-align: middle;
@@ -43,47 +52,47 @@
 }
 
 .profile-icon{
-    background-position: -28px -168px;
+    background-position: 0 -168px;
 }
 
 .messages-icon{
-    background-position: -28px -196px;
+    background-position: 0 -196px;
 }
 
 .friends-icon{
-    background-position: -28px -224px;
+    background-position: 0 -224px;
 }
 
 .groups-icon{
-    background-position: -28px -336px;
+    background-position: 0 -336px;
 }
 
 .avatar-icon{
-    background-position: -28px -252px;
+    background-position: 0 -252px;
 }
 
 .inventory-icon{
-    background-position: -28px -280px;
+    background-position: 0 -280px;
 }
 
 .trade-icon{
-    background-position: -28px -308px;
+    background-position: 0 -308px;
 }
 
 .blog-icon{
-    background-position: -28px -364px;
+    background-position: 0 -364px;
 }
 
 .store-icon{
-    background-position: -28px -420px;
+    background-position: 0 -420px;
 }
 
 .giftcard-icon{
-    background-position: -28px -504px;
+    background-position: 0 -504px;
 }
 
 @media (min-width: 1012px){
     #nav-menu{
-        width: 15%;
+        width: 13%;
     }
 }

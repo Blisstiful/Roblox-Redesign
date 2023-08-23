@@ -2,6 +2,9 @@ import React from "react";
 import style from "./navbar.module.css";
 import image from "../../images/something.jpg";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 const NavBar = ({src, alt, username, link}) =>{
     src = image
     alt = "alttext"
@@ -16,7 +19,7 @@ const NavBar = ({src, alt, username, link}) =>{
                 <div id={style["left"]}>
 
                     <button id={style["nav-menu-button"]}>
-                        {/* Use fontawesome to put a slide drawer nav icon */}
+                        <FontAwesomeIcon icon={faBars} />
                     </button>
 
                     <a href="google.com">Discover</a>
@@ -31,11 +34,11 @@ const NavBar = ({src, alt, username, link}) =>{
                     <a id={style["headshot"]} href={link}>
 
                         <img src={src} alt={alt} />
-                        <p>{username}</p>
+                        <p>@{username}</p>
 
                     </a>
 
-                    {/* Use fontawesome to put a settings icon */}
+                    <i id={style["setting"]}></i>
 
                 </div>
 

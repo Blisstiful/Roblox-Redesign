@@ -153,7 +153,9 @@ const Home = () =>{
 
                 <section id={style["friends"]}>
 
-                    <h2>Friends ({amountoffriends})</h2>
+                    <h2>Friends 
+                        <span>({amountoffriends})</span>
+                    </h2>
 
                     <ul id={style["friends-list"]}> 
 
@@ -162,36 +164,14 @@ const Home = () =>{
                         name="friend123"
                         link="google.com"
                         />
-
+                        
                         <Friend 
                         headshot={image}
                         name="friend123"
                         link="google.com"
                         />
 
-                        <Friend 
-                        headshot={image}
-                        name="friend123"
-                        link="google.com"
-                        />
-
-                        <Friend 
-                        headshot={image}
-                        name="friend123"
-                        link="google.com"
-                        />
-
-                        <Friend 
-                        headshot={image}
-                        name="friend123"
-                        link="google.com"
-                        />
-
-                        <Friend 
-                        headshot={image}
-                        name="friend123"
-                        link="google.com"
-                        />
+                        {/*Redesign this so that it's not as annoying to look at */}
 
                     </ul>
 
@@ -219,12 +199,12 @@ const Game = ({title, thumbnail, alt, likes, playing}) =>{
 
                 
                 <p className={style["temp-two"]}>
-                    <span class={style["likes-icon"]}></span>
+                    <span className={style["likes-icon"]}></span>
                     {likes}
                 </p>
 
                 <p className={style["temp-two"]}>
-                    <span class={style["players-icon"]}></span>
+                    <span className={style["players-icon"]}></span>
                     {playing}    
                 </p>
 
@@ -242,7 +222,7 @@ const Friend = ({headshot, name, link}) =>{
             <a href={link}>
 
                 <img src={headshot} alt={name}/>
-                {name}
+                <span>{name}</span>
 
             </a>
         </li>

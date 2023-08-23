@@ -115,8 +115,7 @@ main{
 }
 
 .players-icon, .likes-icon{
-    display: inline-block;
-    vertical-align: middle;
+    margin-right: 0.25em;
     height: 16px;
     width: 16px;
     background-repeat: no-repeat;
@@ -135,12 +134,29 @@ main{
 
 /*Friends*/
 
+#friends{
+    padding-top: 1rem;
+}
+
+#friends h2{
+    display: flex;
+    align-items: center;
+}
+
+#friends h2 span{
+    margin-left: 0.25rem;
+    font-size: 1.4rem;
+    color: var(--light-grey-3);
+}
+
 #friends-list{
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
 }
 
 #friends-list img{
+    margin-right: 0.5em;
     height: 3em;
     width: 3em;
     border-radius: 50%;
@@ -151,6 +167,11 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0.5em;
+}
+
+#friends-list a span{
+    font-size: 1.25em;
 }
 
 @media (min-width: 1012px) {

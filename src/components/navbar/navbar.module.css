@@ -17,11 +17,16 @@
 #right{
     display: flex;
     justify-content: right;
+    align-items: center;
     height: 100%;
 }
 
 #left :first-child{
-    margin-left: 1em;
+    margin-left: 0.5em;
+}
+
+#left a{
+    font-weight: 500;
 }
 
 #right :last-child{
@@ -32,7 +37,7 @@
     background-color: black;
 }
 
-#navbar #left a{
+#navbar > * > a{
     margin: 0 0.5em;
 }
 
@@ -48,4 +53,22 @@
     object-fit: cover;
     border-radius: 50%;
     margin-right: 0.25em;
+}
+
+#nav-menu-button{
+    display: flex;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+#nav-menu-button svg{
+    font-size: 1.5rem;
+}
+
+#setting{
+    height: 28px;
+    width: 28px;
+    background-size: 56px auto;
+    background-position-y: -84px;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
 }
