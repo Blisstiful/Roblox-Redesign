@@ -4,9 +4,9 @@ import * as All from "../components/index";
 
 import image from "../images/something.jpg";
 
-const Home = () =>{
-    let amountoffriends = 32;
+import Friends from "./sections/friends";
 
+const Home = () =>{
     return(
 
         <React.Fragment>
@@ -151,31 +151,7 @@ const Home = () =>{
 
                 </section>
 
-                <section id={style["friends"]}>
-
-                    <h2>Friends 
-                        <span>({amountoffriends})</span>
-                    </h2>
-
-                    <ul id={style["friends-list"]}> 
-
-                        <Friend 
-                        headshot={image}
-                        name="friend123"
-                        link="google.com"
-                        />
-                        
-                        <Friend 
-                        headshot={image}
-                        name="friend123"
-                        link="google.com"
-                        />
-
-                        {/*Redesign this so that it's not as annoying to look at */}
-
-                    </ul>
-
-                </section>
+                <Friends />
 
             </main>
 
@@ -212,20 +188,6 @@ const Game = ({title, thumbnail, alt, likes, playing}) =>{
 
         </li>
 
-    );
-};
-
-// Will need to add activity status here as well, maybe as a pseudo element
-const Friend = ({headshot, name, link}) =>{
-    return(
-        <li>
-            <a href={link}>
-
-                <img src={headshot} alt={name}/>
-                <span>{name}</span>
-
-            </a>
-        </li>
     );
 };
 

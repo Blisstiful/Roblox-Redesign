@@ -67,7 +67,10 @@ const NavMenu = () =>{
                     Trade
                 </a>
 
-                <a href="google.com">Transactions</a>
+                <a href="google.com">
+                    <span className={style["transactions-icon"]}></span>
+                    Transactions
+                </a>
 
             </div>
 

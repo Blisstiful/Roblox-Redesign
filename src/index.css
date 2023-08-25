@@ -35,6 +35,10 @@ body{
     background-color: var(--bg);
 }
 
+main{
+    margin-top: var(--navbar-height);
+}
+
 #root{
     height: 100%;
     width: 100%;
@@ -55,7 +59,7 @@ li{
     all: unset;
 }
 
-a{
+a, button{
     cursor: pointer;
 }
 

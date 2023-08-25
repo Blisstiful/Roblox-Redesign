@@ -47,6 +47,17 @@
     background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
 }
 
+.transactions-icon{
+    display: inline-block;
+    margin-right: 0.25rem;
+    height: 28px;
+    width: 28px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-image: url(https://images.rbxcdn.com/3a9b44283e65ae1ead90defcb0bdcb6e-economy_28x28_dark.svg);
+}
+
 .house-icon{
     background-position: 0 -140px;
 }
@@ -89,6 +100,10 @@
 
 .giftcard-icon{
     background-position: 0 -504px;
+}
+
+.transactions-icon{
+    background-position: -28px 0;
 }
 
 @media (min-width: 1012px){

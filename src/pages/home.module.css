@@ -57,7 +57,6 @@ main{
 #games-nav button{
     font-size: 1.1rem;
     font-weight: 500;
-    cursor: pointer;
 }
 
 .current{
@@ -132,55 +131,8 @@ main{
     background-image: url(https://images.rbxcdn.com/87b4f6103befbe2c1e9c13eb9d7064db-common_sm_dark_12032018.svg);
 }
 
-/*Friends*/
-
-#friends{
-    padding-top: 1rem;
-}
-
-#friends h2{
-    display: flex;
-    align-items: center;
-}
-
-#friends h2 span{
-    margin-left: 0.25rem;
-    font-size: 1.4rem;
-    color: var(--light-grey-3);
-}
-
-#friends-list{
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-}
-
-#friends-list img{
-    margin-right: 0.5em;
-    height: 3em;
-    width: 3em;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-#friends-list a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.5em;
-}
-
-#friends-list a span{
-    font-size: 1.25em;
-}
-
 @media (min-width: 1012px) {
     #middle{
         width: 70%;
     }
-
-    #friends-list{
-        width: 15%;
-    }
-
 }
