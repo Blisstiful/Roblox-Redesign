@@ -15,3 +15,8 @@ is a breath of fresh air.
 - Use of data to demonstrate React's reactivity
 - One page of content
 - x different ui components
+
+### Disclaimer:
+
+I don't own any of the images or icons presented in this
+webpage. All credit goes to Roblox.com for the icons.

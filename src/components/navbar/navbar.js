@@ -1,14 +1,13 @@
 import React from "react";
 import style from "./navbar.module.css";
-import image from "../../images/something.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = ({src, alt, username, link}) =>{
-    src = image
+    src = "https://tr.rbxcdn.com/449bd812e14a5bd26d24ddc5197cfc94/150/150/AvatarHeadshot/Png"
     alt = "alttext"
-    username = "username123"
+    username = "Vdelaide"
     link = "google.com"
 
     return(

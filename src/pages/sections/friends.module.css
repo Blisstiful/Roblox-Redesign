@@ -18,7 +18,7 @@
 #friends-categories{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 55%;
 }
 
 .current{
@@ -37,6 +37,17 @@
     margin-top: 2.5rem;
 }
 
+#friends-list a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+#friends-list span{
+    position: relative;
+}
+
 #friends-list img{
     margin-right: 0.5em;
     height: 3em;
@@ -45,19 +56,45 @@
     object-fit: cover;
 }
 
-#friends-list a{
+.playing::after, .online::after, .develop::after, .offline::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0.2em;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(https://images.rbxcdn.com/34d457aefdc88489b8d2b2c4f30ae450-friendsstatus_dark.svg);
+    background-size: 100% auto;
+}
+
+.playing::after{
+    background-position: 0 0; /*for clarity*/
+}
+
+.develop::after{
+    background-position: 0 -24px;
+}
+
+.online::after{
+    background-position: 0 -48px;
+}
+
+.offline::after{
+    all: unset;
+    display: none;
+}
+
+#friends-list a p{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 0.5em;
-}
-
-#friends-list a span{
     font-size: 1.25em;
+    font-weight: 500;
 }
 
-@media (min-width: 1012px) {
-    #friends-list{
-        width: 15%;
-    }
+#friends-list i{
+    font-style: normal;
+    font-size: 0.75em;
+    color: var(--light-grey-3);
 }
