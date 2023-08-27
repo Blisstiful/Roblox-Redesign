@@ -1,12 +1,13 @@
 #friends{
-    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
     border-left: 0.25px solid var(--dark-grey);
 }
 
 #friends h2{
     display: flex;
     align-items: center;
-    margin-bottom: 0.5rem;
 }
 
 #friends h2 span{
@@ -26,10 +27,6 @@
     text-decoration-color: var(--text-color);
 }
 
-#friends h2, #friends-list, #friends-categories{
-    margin-left: 2.5rem;
-}
-
 #friends-list{
     display: flex;
     flex-direction: column;
@@ -37,11 +34,14 @@
     margin-top: 2.5rem;
 }
 
+#friends-list li{
+    margin-bottom: 0.5em;
+}
+
 #friends-list a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0.5em;
 }
 
 #friends-list span{
@@ -57,6 +57,33 @@
     object-fit: cover;
     background-color: whitesmoke;
 }
+
+.username{
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.username i{
+    font-style: normal;
+    font-size: 0.75em;
+    color: var(--light-grey-3);
+}
+
+.activity{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.activity i{
+    font-style: normal;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--light-grey-3);
+}
+
+/* ICONS */
 
 .Playing::after, .Online::after, .Developing::after, .Offline::after{
     content: "";
@@ -86,22 +113,4 @@
 .Offline::after{
     all: unset;
     display: none;
-}
-
-.username{
-    display: flex;
-    align-items: center;
-    font-size: 1.25em;
-    font-weight: 500;
-}
-
-.username i{
-    font-style: normal;
-    font-size: 0.75em;
-    color: var(--light-grey-3);
-}
-
-.activity i{
-    font-style: normal;
-    color: var(--light-grey-3);
 }

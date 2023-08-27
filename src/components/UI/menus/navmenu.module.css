@@ -1,8 +1,9 @@
 #nav-menu{
     display: flex;
     flex-direction: column;
+    /*will most likely need to fix the pos
+     and do some magic to this elem*/
     background-color: #191b1d;
-    /*use boxshadow here*/
 }
 
 #nav-menu div{
@@ -99,10 +100,4 @@
 
 .transactions-icon{
     background-position: -28px 0;
-}
-
-@media (min-width: 1012px){
-    #nav-menu{
-        width: 13%;
-    }
 }

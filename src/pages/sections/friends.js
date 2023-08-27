@@ -27,7 +27,23 @@ const Friends = () =>{
                 link="google.com"
                 activity="eat drywall"
                 />
-                
+
+                <Friend
+                status="Playing"
+                headshot="https://tr.rbxcdn.com/37a595ce091a394f51fbaea11ce49b82/150/150/AvatarHeadshot/Png"
+                name="Empire"
+                link="google.com"
+                activity="The Scorch"
+                />
+
+                <Friend
+                status="Playing"
+                headshot="https://tr.rbxcdn.com/79ab362692dc467029dfc714a607e7c0/150/150/AvatarHeadshot/Png"
+                name="Sox"
+                link="google.com"
+                activity="booger simulator"
+                />
+
                 <Friend
                 status="Developing"
                 headshot="https://tr.rbxcdn.com/c87b00c9cb51d3dc42271ba42fef6aba/150/150/AvatarHeadshot/Png"
@@ -45,6 +61,22 @@ const Friends = () =>{
                 />
 
                 <Friend
+                status="Online"
+                headshot="https://tr.rbxcdn.com/ccf999660bc35b2a9d956afa5dfb4775/150/150/AvatarHeadshot/Png"
+                name="Doggo"
+                link="google.com"
+                activity=""
+                />
+                
+                <Friend
+                status="Offline"
+                headshot="https://tr.rbxcdn.com/b765646a3c44006e89237d8c1faf4619/150/150/AvatarHeadshot/Png"
+                name="Renee"
+                link="google.com"
+                activity=""
+                />
+                
+                <Friend
                 status="Offline"
                 headshot="https://tr.rbxcdn.com/1b44ae1e8d8d61e07453e967b841e1f2/150/150/AvatarHeadshot/Png"
                 name="Willow"
@@ -52,23 +84,12 @@ const Friends = () =>{
                 activity=""
                 />
 
-                <Friend
-                status="Online"
-                headshot="https://tr.rbxcdn.com/ccf999660bc35b2a9d956afa5dfb4775/150/150/AvatarHeadshot/Png"
-                name="Doggo"
-                link="google.com"
-                activity=""
-                />
-
-                {/*Redesign this so that it's not as annoying to look at */}
-
             </ul>
 
         </section>
     );
 };
 
-// Will need to add activity/starred status here as well, maybe as a pseudo element
 const Friend = ({link, status, headshot, name, activity}) =>{
     return(
         <li>

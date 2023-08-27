@@ -1,6 +1,8 @@
 #input-group{
     display: flex;
     align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 0.75rem;
     height: 2rem;
     width: 30rem;
     border-radius: 0.5rem;

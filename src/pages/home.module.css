@@ -1,7 +1,13 @@
 main{
-    display: flex;
+    display: grid;
+    grid-template: 1fr/13rem auto;
     height: calc(100% - var(--navbar-height));
     width: 100%;
+}
+
+#content{
+    display: grid;
+    grid-template: 1fr/auto calc(22.5% - 1rem);
 }
 
 #middle{
@@ -10,22 +16,8 @@ main{
     /*Min and max widths are used to be responsive here*/
 }
 
-#top{
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-}
-
-#top h1{
-    margin-bottom: 0.75rem;
-}
-
-#top div{
-    margin-bottom: 1rem;
-}
-
-#top > *{
-    margin-left: 1rem;
+#home-title{
+    margin: 1rem 0 0.75rem 1rem;
 }
 
 #games{
@@ -131,8 +123,14 @@ main{
     background-image: url(https://images.rbxcdn.com/87b4f6103befbe2c1e9c13eb9d7064db-common_sm_dark_12032018.svg);
 }
 
-@media (min-width: 1012px) {
-    #middle{
-        width: 70%;
+@media (max-width: 1500px) {
+    #games-list{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    #games-list{
+        grid-template-columns: repeat(3, 1fr);
     }
 }

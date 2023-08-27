@@ -7,7 +7,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const NavBar = ({src, alt, username, link}) =>{
     src = "https://tr.rbxcdn.com/449bd812e14a5bd26d24ddc5197cfc94/150/150/AvatarHeadshot/Png"
     alt = "alttext"
-    username = "Vdelaide"
+    username = "vdelaide"
     link = "google.com"
 
     return(
@@ -33,7 +33,7 @@ const NavBar = ({src, alt, username, link}) =>{
                     <a id={style["headshot"]} href={link}>
 
                         <img src={src} alt={alt} />
-                        <p>@{username}</p>
+                        <p><i>@</i>{username}</p>
 
                     </a>
 
