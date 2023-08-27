@@ -12,11 +12,6 @@
     width: 50%;
 }
 
-#nav-menu div p{
-    font-size: 1.4em;
-    font-weight: 500;
-}
-
 #nav-menu div hr{
     all: unset;
     margin-bottom: 0.5em;

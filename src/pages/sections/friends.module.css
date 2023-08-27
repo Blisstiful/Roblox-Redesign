@@ -46,6 +46,7 @@
 
 #friends-list span{
     position: relative;
+    z-index: -1;
 }
 
 #friends-list img{
@@ -54,9 +55,10 @@
     width: 3em;
     border-radius: 50%;
     object-fit: cover;
+    background-color: whitesmoke;
 }
 
-.playing::after, .online::after, .develop::after, .offline::after{
+.Playing::after, .Online::after, .Developing::after, .Offline::after{
     content: "";
     display: inline-block;
     position: absolute;
@@ -69,32 +71,37 @@
     background-size: 100% auto;
 }
 
-.playing::after{
+.Playing::after{
     background-position: 0 0; /*for clarity*/
 }
 
-.develop::after{
+.Developing::after{
     background-position: 0 -24px;
 }
 
-.online::after{
+.Online::after{
     background-position: 0 -48px;
 }
 
-.offline::after{
+.Offline::after{
     all: unset;
     display: none;
 }
 
-#friends-list a p{
+.username{
     display: flex;
     align-items: center;
     font-size: 1.25em;
     font-weight: 500;
 }
 
-#friends-list i{
+.username i{
     font-style: normal;
     font-size: 0.75em;
+    color: var(--light-grey-3);
+}
+
+.activity i{
+    font-style: normal;
     color: var(--light-grey-3);
 }

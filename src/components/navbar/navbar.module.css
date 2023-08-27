@@ -58,6 +58,7 @@
     object-fit: cover;
     border-radius: 50%;
     margin-right: 0.25em;
+    background-color: whitesmoke;
 }
 
 #nav-menu-button{

@@ -8,7 +8,7 @@ const NavMenu = () =>{
             {/* OVERVIEW */}
             <div>
 
-                <p>Overview</p>
+                <h4>Overview</h4>
                 <hr />
 
                 <a href="google.com">
@@ -26,7 +26,7 @@ const NavMenu = () =>{
             {/* SOCIAL */}
             <div>
 
-                <p>Social</p>
+                <h4>Social</h4>
                 <hr />
 
                 <a href="google.com">
@@ -49,7 +49,7 @@ const NavMenu = () =>{
             {/* ACCOUNT */}
             <div>
 
-                <p>Account</p>
+                <h4>Account</h4>
                 <hr />
 
                 <a href="google.com">
@@ -77,7 +77,7 @@ const NavMenu = () =>{
             {/* OFFICIAL */}
             <div>
 
-                <p>Official</p>
+                <h4>Official</h4>
                 <hr />
 
                 <a href="google.com">

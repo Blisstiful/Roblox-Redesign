@@ -97,7 +97,7 @@ main{
     height: 10em;
     width: 10em;
     margin-bottom: 0.5rem;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     object-fit: cover;
 }
 
