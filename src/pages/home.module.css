@@ -1,7 +1,7 @@
 main{
     display: grid;
     grid-template: 1fr/13rem auto;
-    height: calc(100% - var(--navbar-height));
+    height: auto;
     width: 100%;
 }
 
@@ -79,6 +79,7 @@ main{
     width: 100%;
     margin-bottom: 0.5rem;
     font-size: 1.2em;
+    font-weight: 500;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

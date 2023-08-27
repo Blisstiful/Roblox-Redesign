@@ -153,7 +153,7 @@ const Home = () =>{
 
             </main>
 
-            {/* FOOTER GOES HERE */}
+            <All.Footer />
 
         </React.Fragment>
 

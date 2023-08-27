@@ -3,6 +3,7 @@ import NavBar from "./navbar/navbar";
 
 import Settings from "./UI/menus/settings";
 import NavMenu from "./UI/menus/navmenu";
+import Languages from "./UI/menus/languages";
 
 import GetPremium from "./UI/buttons/getpremium";
 
@@ -14,5 +15,6 @@ export{
     Settings,
     NavMenu,
     GetPremium,
-    Searchbar
+    Searchbar,
+    Languages
 }
