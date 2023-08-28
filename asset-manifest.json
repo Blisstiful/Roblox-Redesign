@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Roblox-Redesign/static/css/main.d3bb3b36.css",
+    "main.js": "/Roblox-Redesign/static/js/main.1f54dec8.js",
+    "index.html": "/Roblox-Redesign/index.html",
+    "main.d3bb3b36.css.map": "/Roblox-Redesign/static/css/main.d3bb3b36.css.map",
+    "main.1f54dec8.js.map": "/Roblox-Redesign/static/js/main.1f54dec8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3bb3b36.css",
+    "static/js/main.1f54dec8.js"
+  ]
+}
