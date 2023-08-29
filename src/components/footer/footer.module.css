@@ -10,7 +10,7 @@ footer{
 footer > ul{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     height: fit-content;
     width: 55%;
 }

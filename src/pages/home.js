@@ -140,6 +140,54 @@ const Home = () =>{
                                 likes="80%"
                                 playing="5k"
                                 />
+                                
+                                <Game
+                                title="get divorced at 3am"
+                                thumbnail="https://tr.rbxcdn.com/9fbb3025e3d94831e4059ce9d948d4e7/150/150/Image/Png"
+                                alt="Logo for Phantom Forces"
+                                likes="80%"
+                                playing="5k"
+                                />
+                                
+                                <Game
+                                title="Theme Park Tycoon 2"
+                                thumbnail="https://tr.rbxcdn.com/fb51d6471e222f6203b5940132d82938/512/512/Image/Png"
+                                alt="Logo for Phantom Forces"
+                                likes="80%"
+                                playing="5k"
+                                />
+
+                                <Game
+                                title="The Stalker: Reborn"
+                                thumbnail="https://tr.rbxcdn.com/e6df58f526566f34d76ba3606518f5bf/150/150/Image/Png"
+                                alt="Logo for Phantom Forces"
+                                likes="80%"
+                                playing="5k"
+                                />
+
+                                <Game
+                                title="Mad Paintball [FPS]"
+                                thumbnail="https://tr.rbxcdn.com/88fa23444db0a910abfa9ab48297caa7/150/150/Image/Png"
+                                alt="Logo for Phantom Forces"
+                                likes="80%"
+                                playing="5k"
+                                />
+
+                                <Game
+                                title="Framed!"
+                                thumbnail="https://tr.rbxcdn.com/a9b8a245e706f2ba7411627967e906bc/150/150/Image/Png"
+                                alt="Logo for Phantom Forces"
+                                likes="80%"
+                                playing="5k"
+                                />
+
+                                <Game
+                                title="Zombies are Attacking McDonalds!"
+                                thumbnail="https://tr.rbxcdn.com/d53bebecc3dc8389de829168b43bcf77/150/150/Image/Png"
+                                alt="Logo for Phantom Forces"
+                                likes="80%"
+                                playing="5k"
+                                />
 
                             </ul>
 

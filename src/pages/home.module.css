@@ -7,7 +7,7 @@ main{
 
 #content{
     display: grid;
-    grid-template: 1fr/auto calc(22.5% - 1rem);
+    grid-template: 1fr/auto calc(22.5% - 1rem); /*mes with the proportions to have it not break responsiveness*/
 }
 
 #middle{
@@ -60,8 +60,9 @@ main{
 
 #games-list{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     justify-items: center;
+    column-gap: 1rem;
 }
 
 #games-list li{
@@ -69,21 +70,20 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 15rem;
+    height: 17.5rem;
     width: 10rem;
-    border-radius: 1rem;
     cursor: pointer;
 }
 
 .game-title{
+    height: 16%;
     width: 100%;
     margin-bottom: 0.5rem;
     font-size: 1.2em;
     font-weight: 500;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #games-list li img{
@@ -122,16 +122,4 @@ main{
 .likes-icon{
     background-position: 0 -32px;
     background-image: url(https://images.rbxcdn.com/87b4f6103befbe2c1e9c13eb9d7064db-common_sm_dark_12032018.svg);
-}
-
-@media (max-width: 1500px) {
-    #games-list{
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 500px) {
-    #games-list{
-        grid-template-columns: repeat(3, 1fr);
-    }
 }

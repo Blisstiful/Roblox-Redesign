@@ -10,7 +10,7 @@ class App extends Component {
 
                 <Routes>
 
-                    <Route exact path="/Roblox-Redesign" element={<Home />}></Route>
+                    <Route path="/Roblox-Redesign" element={<Home />}></Route>
                     {/* Only one page but this is just easier for me to structure */}
 
                 </Routes>

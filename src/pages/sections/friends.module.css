@@ -32,9 +32,11 @@
     flex-direction: column;
     width: 100%;
     margin-top: 2.5rem;
+    overflow-x: hidden;
 }
 
 #friends-list li{
+    width: fit-content;
     margin-bottom: 0.5em;
 }
 
@@ -61,6 +63,7 @@
 .username{
     display: flex;
     align-items: center;
+    text-overflow: ellipsis;
     font-size: 1.25em;
     font-weight: 500;
 }
