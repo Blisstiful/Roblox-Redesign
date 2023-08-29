@@ -6,16 +6,7 @@ class App extends Component {
     render(){
         return(
 
-            <Router>
-
-                <Routes>
-
-                    <Route path="/Roblox-Redesign" element={<Home />}></Route>
-                    {/* Only one page but this is just easier for me to structure */}
-
-                </Routes>
-
-            </Router>
+            <Home />
 
         );
     };
