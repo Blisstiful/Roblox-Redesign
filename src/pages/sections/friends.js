@@ -33,7 +33,7 @@ const Friends = () =>{
                 headshot="https://tr.rbxcdn.com/37a595ce091a394f51fbaea11ce49b82/150/150/AvatarHeadshot/Png"
                 name="Empire"
                 link="google.com"
-                activity="The Scorch"
+                activity="[ALPHA] The Scorch"
                 />
 
                 <Friend
@@ -50,6 +50,14 @@ const Friends = () =>{
                 name="Async"
                 link="google.com"
                 activity="test_world1"
+                />
+                
+                <Friend
+                status="Developing"
+                headshot="https://tr.rbxcdn.com/355faeb61fccbc1d4af3291dbf0ce78e/150/150/AvatarHeadshot/Png"
+                name="Silentu"
+                link="google.com"
+                activity="[ALPHA] The Scorch"
                 />
 
                 <Friend
@@ -68,6 +76,14 @@ const Friends = () =>{
                 activity=""
                 />
                 
+                <Friend
+                status="Online"
+                headshot="https://tr.rbxcdn.com/a0d923bbee6ed5ebb980f90c6b1900d1/150/150/AvatarHeadshot/Png"
+                name="Jacob"
+                link="google.com"
+                activity=""
+                />
+
                 <Friend
                 status="Offline"
                 headshot="https://tr.rbxcdn.com/b765646a3c44006e89237d8c1faf4619/150/150/AvatarHeadshot/Png"
@@ -105,6 +121,7 @@ const Friend = ({link, status, headshot, name, activity}) =>{
 
                     <p className={style["username"]}>
                         <i>@</i>{name}
+                        {/*Could be a greyed out star to add the star feature. Next to the name*/}
                     </p>
 
                     {/*if status/activity is offline this should be

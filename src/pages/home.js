@@ -21,7 +21,7 @@ const Home = () =>{
 
                         <h1 id={style["home-title"]}>Home</h1>
 
-                        <All.Searchbar />
+                        <All.Searchbar hasSearchNav={true}/>
 
                         <div id={style["games"]}>
 
@@ -94,7 +94,7 @@ const Home = () =>{
                                 />
 
                                 <Game
-                                title="The Scorch"
+                                title="[ALPHA] The Scorch"
                                 thumbnail="https://tr.rbxcdn.com/ae8073c1d15cb38b4139c37a4a67ee86/150/150/Image/Png"
                                 alt="Logo for Phantom Forces"
                                 likes="80%"

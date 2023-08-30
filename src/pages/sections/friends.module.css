@@ -1,6 +1,7 @@
 #friends{
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 1rem;
     border-left: 0.25px solid var(--dark-grey);
 }
@@ -11,7 +12,6 @@
 }
 
 #friends h2 span{
-    margin-left: 0.25rem;
     font-size: 1.4rem;
     color: var(--light-grey-3);
 }
@@ -30,7 +30,6 @@
 #friends-list{
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin-top: 2.5rem;
     overflow-x: hidden;
 }

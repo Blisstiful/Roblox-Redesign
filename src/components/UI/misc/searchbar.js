@@ -4,12 +4,30 @@ import style from "./searchbar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 
-const Searchbar = () =>{
+const Searchbar = ({hasSearchNav}) =>{
     return(
-        <div id={style["input-group"]}>
+        <div id={style["container-fr-fr"]}>
 
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
-            <input type="text" placeholder="Search..." id={style["searchbar"]}></input>
+            {
+                hasSearchNav ? 
+                (
+                <ul id={style["search-nav"]}>
+
+                    <li><button>Games</button></li>
+                    <li><button>Groups</button></li>
+                    <li><button>Players</button></li>
+                    <li><button>Market</button></li>
+
+                </ul>)
+                : (<p></p>)
+            }
+
+            <div id={style["input-group"]}>
+
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+                <input type="text" placeholder="Search..." id={style["searchbar"]}></input>
+
+            </div>
 
         </div>
     );

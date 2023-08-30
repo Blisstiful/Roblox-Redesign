@@ -7,7 +7,7 @@ main{
 
 #content{
     display: grid;
-    grid-template: 1fr/auto calc(22.5% - 1rem); /*mes with the proportions to have it not break responsiveness*/
+    grid-template: 1fr/auto 18rem; /*mess with the proportions to have it not break responsiveness*/
 }
 
 #middle{
@@ -62,7 +62,7 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     justify-items: center;
-    column-gap: 1rem;
+    column-gap: 0.5rem;
 }
 
 #games-list li{
@@ -90,7 +90,7 @@ main{
     height: 10em;
     width: 10em;
     margin-bottom: 0.5rem;
-    border-radius: 0.75rem;
+    border-radius: 0.5rem;
     object-fit: cover;
 }
 
