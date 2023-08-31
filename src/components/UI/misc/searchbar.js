@@ -8,6 +8,13 @@ const Searchbar = ({hasSearchNav}) =>{
     return(
         <div id={style["container-fr-fr"]}>
 
+            <div id={style["input-group"]}>
+
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+                <input type="text" placeholder="Search..." id={style["searchbar"]}></input>
+
+            </div>
+
             {
                 hasSearchNav ? 
                 (
@@ -15,19 +22,13 @@ const Searchbar = ({hasSearchNav}) =>{
 
                     <li><button>Games</button></li>
                     <li><button>Groups</button></li>
+
                     <li><button>Players</button></li>
                     <li><button>Market</button></li>
 
                 </ul>)
-                : (<p></p>)
+                : (<div></div>)
             }
-
-            <div id={style["input-group"]}>
-
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
-                <input type="text" placeholder="Search..." id={style["searchbar"]}></input>
-
-            </div>
 
         </div>
     );

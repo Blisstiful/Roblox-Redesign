@@ -42,6 +42,10 @@ const Home = () =>{
 
                             <ul id={style["games-list"]}>
 
+                                {/*Maybe if the screen size is large then the categories could just be displayed
+                                instead of having a button up top. like what roblox does rn but with favorites,
+                                recommended, etc. etc.*/}
+
                                 <Game
                                 title="Phantom Forces"
                                 thumbnail="https://tr.rbxcdn.com/f7b2d115353bd891c7613d84741565fc/150/150/Image/Png"
@@ -184,6 +188,54 @@ const Home = () =>{
                                 <Game
                                 title="Zombies are Attacking McDonalds!"
                                 thumbnail="https://tr.rbxcdn.com/d53bebecc3dc8389de829168b43bcf77/150/150/Image/Png"
+                                alt="Logo for Phantom Forces"
+                                likes="80%"
+                                playing="5k"
+                                />
+                                
+                                <Game
+                                title="Energy Assault"
+                                thumbnail="https://tr.rbxcdn.com/0eda963c9e0b2f6df8bb8cba7083866b/150/150/Image/Png"
+                                alt="Logo for Phantom Forces"
+                                likes="80%"
+                                playing="5k"
+                                />
+
+                                <Game
+                                title="Emergency Reponse: Liberty County"
+                                thumbnail="https://tr.rbxcdn.com/6302617c3ea32ed69beb4c2ff041f32a/150/150/Image/Png"
+                                alt="Logo for Phantom Forces"
+                                likes="80%"
+                                playing="5k"
+                                />
+                                
+                                <Game
+                                title="Become Forklift Certified Obby"
+                                thumbnail="https://tr.rbxcdn.com/90d8482f23cefdb3e1040e064ea171f4/150/150/Image/Png"
+                                alt="Logo for Phantom Forces"
+                                likes="80%"
+                                playing="5k"
+                                />
+
+                                <Game
+                                title="Write a Letter"
+                                thumbnail="https://tr.rbxcdn.com/e62e2dae0020516e7c8a56ec8d4d9052/150/150/Image/Png"
+                                alt="Logo for Phantom Forces"
+                                likes="80%"
+                                playing="5k"
+                                />
+
+                                <Game
+                                title="Work at a Pizza Place"
+                                thumbnail="https://tr.rbxcdn.com/eb147449869e1b35f0daf0177a71185d/512/512/Image/Png"
+                                alt="Logo for Phantom Forces"
+                                likes="80%"
+                                playing="5k"
+                                />
+
+                                <Game
+                                title="Witching Hour"
+                                thumbnail="https://tr.rbxcdn.com/1cc7c2d278f1a6c0865b55346bf01d1c/150/150/Image/Png"
                                 alt="Logo for Phantom Forces"
                                 likes="80%"
                                 playing="5k"

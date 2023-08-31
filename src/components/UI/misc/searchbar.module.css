@@ -38,12 +38,13 @@
 #search-nav{
     display: flex;
     justify-content: space-between;
-    margin-left: 1rem;
+    margin-left: 3.5rem;
     margin-bottom: 0.4rem;
     width: 15rem;
 }
 
 #search-nav button{
     color: var(--light-grey-2);
-    font-size: 0.75em;
+    font-size: 0.8rem;
+    font-weight: 300;
 }

@@ -9,9 +9,11 @@
 #friends h2{
     display: flex;
     align-items: center;
+    align-self: flex-start;
 }
 
 #friends h2 span{
+    margin-left: 0.5rem;
     font-size: 1.4rem;
     color: var(--light-grey-3);
 }
@@ -19,7 +21,8 @@
 #friends-categories{
     display: flex;
     justify-content: space-between;
-    width: 55%;
+    align-self: flex-start;
+    width: 9.5rem;
 }
 
 .current{

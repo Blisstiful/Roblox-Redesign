@@ -16,6 +16,11 @@ is a breath of fresh air.
 - One page of content
 - x different ui components
 
+## What I learned:
+- Conditional rendering
+- ServerSide rendering
+- How to deploy and maintain a React app to Github Pages
+
 ### Disclaimer:
 
 I don't own any of the images or icons presented in this

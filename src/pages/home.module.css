@@ -1,7 +1,7 @@
 main{
     display: grid;
     grid-template: 1fr/13rem auto;
-    height: auto;
+    height: fit-content;
     width: 100%;
 }
 
