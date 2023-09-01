@@ -1,3 +1,13 @@
+/*
+TODO: 
+*Make and organize font-system
+*Make the home section of the middle column more important
+*Add actual functionality to the buttons
+*Use javascript to sort the data
+*Make friendslist outside of #content, and responsive
+*Probably move friendslist to main
+*/
+
 :root{
     /* Colors */
     --bg: #232527;
@@ -11,6 +21,8 @@
 
     /* Consistency */
     --navbar-height: 60px;
+    --navmenu-width: 13rem;
+    --friendslist-width: 18rem;
 
     /* Font sizes */
     /*Create consistent font sizes here (h1 size, 1.5em etc etc)*/

@@ -6,6 +6,7 @@
     align-items: center;
     height: var(--navbar-height);
     width: 100%;
+    z-index: 2;
     /*incredibly cursed to use a fraction of a px but*/
     border-bottom: 0.25px solid #111214;
     background-color: #191b1d;

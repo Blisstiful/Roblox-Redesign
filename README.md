@@ -25,3 +25,6 @@ is a breath of fresh air.
 
 I don't own any of the images or icons presented in this
 webpage. All credit goes to Roblox.com for the icons.
+
+note for me:
+to deploy, run "npm run build" to build, then run "npm run deploy" to publish

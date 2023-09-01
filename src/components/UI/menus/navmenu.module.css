@@ -1,19 +1,15 @@
 #nav-menu{
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: fixed;
     height: 100vh;
+    width: var(--navmenu-width);
     /*will most likely need to fix the pos
      and do some magic to this elem*/
-    z-index: -1;
     background-color: #191b1d;
 }
 
-#wrapper{
-    position: fixed;
-}
-
-#wrapper div{
+#nav-menu div{
     display: flex;
     flex-direction: column;
     margin: 0.75em 0 0.75em 1em;
