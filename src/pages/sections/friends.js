@@ -100,6 +100,22 @@ const Friends = () =>{
                 activity=""
                 />
 
+                <Friend
+                status="Offline"
+                headshot="https://tr.rbxcdn.com/7fe23178651f5f85a6e526c5acf9ba2b/150/150/AvatarHeadshot/Png"
+                name="Lucy"
+                link="google.com"
+                activity=""
+                />
+                
+                <Friend
+                status="Offline"
+                headshot="https://tr.rbxcdn.com/79f0ff47955b603f0b58b03df540484f/150/150/AvatarHeadshot/Png"
+                name="Zen"
+                link="google.com"
+                activity=""
+                />
+
             </ul>
 
         </section>

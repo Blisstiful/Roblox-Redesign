@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./navbar.module.css";
+import useToggle from "../../hooks/useToggle";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -23,6 +24,7 @@ const NavBar = ({src, alt, username, link}) =>{
 
                     <a href="google.com">Discover</a>
                     <a href="google.com">Develop</a>
+                    
                     <a href="google.com">Market</a>
                     <a href="google.com">Robux</a>
 

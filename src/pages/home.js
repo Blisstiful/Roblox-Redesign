@@ -239,7 +239,7 @@ const Home = () =>{
                                 alt="Logo for Phantom Forces"
                                 likes="80%"
                                 playing="5k"
-                                />
+                                />https://tr.rbxcdn.com/79f0ff47955b603f0b58b03df540484f/150/150/AvatarHeadshot/Png
 
                             </ul>
 

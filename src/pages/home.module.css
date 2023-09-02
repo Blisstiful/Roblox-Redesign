@@ -6,16 +6,17 @@ main{
 }
 
 #content{
-    display: grid;
-    grid-template: 1fr/auto 18rem; /*mess with the proportions to have it not break responsiveness*/
+    /* display: grid;
+    grid-template: 1fr/auto 18rem; */
+    display: flex;
     margin-left: var(--navmenu-width);
-    width: calc(100% - var(--navmenu-width));
+    width: calc(calc(100% - var(--navmenu-width)) - 1rem);
 }
 
 #middle{
     display: flex;
     flex-direction: column;
-    /*Min and max widths are used to be responsive here*/
+    width: calc(100% - 20rem);
 }
 
 #home-title{
@@ -114,14 +115,13 @@ main{
     width: 16px;
     background-repeat: no-repeat;
     background-size: 32px auto;
+    background-image: url(https://images.rbxcdn.com/87b4f6103befbe2c1e9c13eb9d7064db-common_sm_dark_12032018.svg);
 }
 
 .players-icon{
     background-position: 0 -48px;
-    background-image: url(https://images.rbxcdn.com/87b4f6103befbe2c1e9c13eb9d7064db-common_sm_dark_12032018.svg);
 }
 
 .likes-icon{
     background-position: 0 -32px;
-    background-image: url(https://images.rbxcdn.com/87b4f6103befbe2c1e9c13eb9d7064db-common_sm_dark_12032018.svg);
 }
