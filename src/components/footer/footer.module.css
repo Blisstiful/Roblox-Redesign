@@ -5,6 +5,7 @@ footer{
     justify-content: center;
     height: 10rem;
     width: 100%;
+    color: #bdbebe;
 }
 
 footer > ul{
@@ -16,9 +17,14 @@ footer > ul{
 }
 
 footer > ul a{
-    color: var(--light-grey-3);
+    color: inherit;
     font-size: 1.1rem;
     font-weight: 500;
+    transition: color 0.25s;
+}
+
+footer > ul a:hover{
+    color: rgb(255, 255, 255);
 }
 
 footer hr{
@@ -27,12 +33,14 @@ footer hr{
 }
 
 #disclaimer{
-    display: grid;
-    grid-template: 1fr/0.2fr 0.8fr;
+    display: flex;
+    justify-content: center;
 }
 
 #disclaimer p{
-    color: var(--light-grey-3);
+    margin-left: 1rem;
+    width: 50%;
+    color: inherit;
     font-size: 0.75rem;
     font-weight: 400;
 }
