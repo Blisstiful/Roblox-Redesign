@@ -4,6 +4,7 @@ import style from "./navmenu.module.css";
 const NavMenu = () =>{
     return(
         <aside id={style["nav-menu"]}>
+            {/*should be em*/}
 
             {/* OVERVIEW */}
             <div>

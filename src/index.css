@@ -69,6 +69,7 @@ ul{
 
 li{
     all: unset;
+    font-family: "Roboto", sans-serif;
 }
 
 a, button{

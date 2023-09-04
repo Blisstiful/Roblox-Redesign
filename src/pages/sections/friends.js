@@ -116,6 +116,14 @@ const Friends = () =>{
                 activity=""
                 />
 
+                <Friend
+                status="Offline"
+                headshot="https://tr.rbxcdn.com/1d793289e70e8b4a7ca50dc16e00b0e5/150/150/AvatarHeadshot/Png"
+                name="Typhoon"
+                link="google.com"
+                activity=""
+                />
+
             </ul>
 
         </section>

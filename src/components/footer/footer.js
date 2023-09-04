@@ -1,6 +1,8 @@
 import React from "react";
 import style from "./footer.module.css";
 
+import Languages from "../UI/menus/languages";
+
 const Footer = () =>{
     return(
         <footer>
@@ -26,7 +28,7 @@ const Footer = () =>{
 
             <div id={style["disclaimer"]}>
 
-                <i>placeholder</i>
+                <Languages />
 
                 <p>This is an UNOFFICIAL redesign of Roblox Corporation's homepage.
                     This is in no way affiliated with Roblox. Please don't think that it is.
