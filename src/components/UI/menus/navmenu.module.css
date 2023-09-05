@@ -35,7 +35,7 @@
 /* ICONS */
 
 .house-icon, .profile-icon, .messages-icon, .friends-icon, .groups-icon, .avatar-icon, .inventory-icon, .trade-icon,
-.blog-icon, .store-icon, .giftcard-icon{
+.blog-icon, .store-icon, .giftcard-icon, .transactions-icon{
     display: inline-block;
     margin-right: 0.25rem;
     height: 28px;
@@ -47,13 +47,6 @@
 }
 
 .transactions-icon{
-    display: inline-block;
-    margin-right: 0.25rem;
-    height: 28px;
-    width: 28px;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    background-size: auto auto;
     background-image: url(https://images.rbxcdn.com/3a9b44283e65ae1ead90defcb0bdcb6e-economy_28x28_dark.svg);
 }
 
@@ -103,4 +96,10 @@
 
 .transactions-icon{
     background-position: -28px 0;
+}
+
+@media (max-width: 768px){
+    #nav-menu{
+        display: none;
+    }
 }

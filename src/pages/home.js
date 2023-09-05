@@ -11,13 +11,15 @@ const Home = () =>{
 
             <All.NavBar />
 
-            <main>
+            <main id={style["main"]}>
 
                 <All.NavMenu />
 
                 <section id={style["content"]}>
 
                     <section id={style["middle"]}>
+                        {/*probably will need to remove middle,
+                        make a title div, game div, friend div, etc. etc. */}
 
                         <h1 id={style["home-title"]}>Home</h1>
 

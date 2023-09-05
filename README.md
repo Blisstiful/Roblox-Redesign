@@ -9,12 +9,20 @@ This is meant to give me more opportunities to use and structure React projects.
 It's also mainly inspired by my annoyance at Roblox's homepage layout, and hopefully
 is a breath of fresh air.
 
+## Screenshot:
+x
+
+## Technologies/Libraries: (WIP name)
+- React
+- Github Pages
+- FontAwesome (Free)
+
 ## Features: 
 
 - Modularity
 - Use of data to demonstrate React's reactivity
-- One page of content
-- x different ui components
+- One full page of content
+- 4 different ui components
 
 ## What I learned:
 - Conditional rendering
@@ -25,6 +33,3 @@ is a breath of fresh air.
 
 I don't own any of the images or icons presented in this
 webpage. All credit goes to Roblox.com for the icons.
-
-note for me:
-to deploy, run "npm run build" to build, then run "npm run deploy" to publish

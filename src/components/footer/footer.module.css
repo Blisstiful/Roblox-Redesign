@@ -8,7 +8,7 @@ footer{
     color: #bdbebe;
 }
 
-footer > ul{
+#footer-list{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5rem;
@@ -16,14 +16,14 @@ footer > ul{
     width: 55%;
 }
 
-footer > ul a{
+#footer-list a{
     color: inherit;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-weight: 500;
     transition: color 0.25s;
 }
 
-footer > ul a:hover{
+#footer-list a:hover{
     color: rgb(255, 255, 255);
 }
 
@@ -41,6 +41,22 @@ footer hr{
     margin-left: 1rem;
     width: 50%;
     color: inherit;
-    font-size: 0.75rem;
+    font-size: 0.75em;
     font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    footer hr{
+        margin-bottom: 2em;
+        width: 95%; /*slightly longer than the list*/
+    }
+
+    #footer-list{
+        margin-bottom: 0.5em;
+        width: 100%;
+    }
+
+    #footer-list a{
+        font-size: 1.1em;
+    }
 }

@@ -123,3 +123,10 @@
     all: unset;
     display: none;
 }
+
+@media (max-width: 768px) {
+    #friends{
+        display: none;
+        /*will fix l8r :3*/
+    }
+}

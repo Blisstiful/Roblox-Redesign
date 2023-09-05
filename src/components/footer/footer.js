@@ -7,7 +7,7 @@ const Footer = () =>{
     return(
         <footer>
 
-            <ul>
+            <ul id={style["footer-list"]}>
                 <li><a href="https://google.com">About Us</a></li>
                 <li><a href="https://google.com">Jobs</a></li>
 
