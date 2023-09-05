@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Roblox-Redesign/static/css/main.f7ae3a74.css",
-    "main.js": "/Roblox-Redesign/static/js/main.7f3c3432.js",
+    "main.css": "/Roblox-Redesign/static/css/main.b6f601e1.css",
+    "main.js": "/Roblox-Redesign/static/js/main.7f373230.js",
     "index.html": "/Roblox-Redesign/index.html",
-    "main.f7ae3a74.css.map": "/Roblox-Redesign/static/css/main.f7ae3a74.css.map",
-    "main.7f3c3432.js.map": "/Roblox-Redesign/static/js/main.7f3c3432.js.map"
+    "main.b6f601e1.css.map": "/Roblox-Redesign/static/css/main.b6f601e1.css.map",
+    "main.7f373230.js.map": "/Roblox-Redesign/static/js/main.7f373230.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7ae3a74.css",
-    "static/js/main.7f3c3432.js"
+    "static/css/main.b6f601e1.css",
+    "static/js/main.7f373230.js"
   ]
 }
