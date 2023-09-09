@@ -3,9 +3,9 @@ TODO:
 *Make and organize font-system
 *Make the home section of the middle column more important
 *Add actual functionality to the buttons
-*Use javascript to sort the data
-*Make friendslist outside of #content, and responsive
-*Probably move friendslist to main
+*Finish the footer
+*Make the footer actually correspond with something
+*Make the friendslist conditionally render friends based on screen size for mobile
 */
 
 :root{

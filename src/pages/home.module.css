@@ -7,14 +7,9 @@ main{
 
 #content{
     display: flex;
+    flex-direction: column;
     margin-left: var(--navmenu-width);
     width: calc(calc(100% - var(--navmenu-width)) - 1rem);
-}
-
-#middle{
-    display: flex;
-    flex-direction: column;
-    width: calc(100% - 20rem);
 }
 
 #home-title{
@@ -24,26 +19,20 @@ main{
 #games{
     display: flex;
     flex-direction: column;
+    width: calc(100% - 20rem);
 }
 
 /* GAMES HEADER */
 
-#games-nav{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-    width: 100%;
-}
-
-#games-nav h2{
+#games h2{
     margin-bottom: 0.5rem;
 }
 
-#games-nav ul{
+#games-nav{
     display: flex;
 }
 
-#games-nav h2, #games-nav button{
+#games h2, #games-nav button{
     margin-left: 1rem;
 }
 
@@ -130,8 +119,17 @@ main{
         width: 100%;
     }
 
-    #middle{
-        width: 100%;
+    #home-title{
+        order: 1;
+    }
+
+    #home-tab{
+        order: 2;
+    }
+
+    #games{
+        order: 4;
+        width: calc(100% - 1rem);
     }
 
     #games-list{

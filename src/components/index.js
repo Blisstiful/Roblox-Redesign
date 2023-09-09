@@ -5,8 +5,6 @@ import Settings from "./UI/menus/settings";
 import NavMenu from "./UI/menus/navmenu";
 import Languages from "./UI/menus/languages";
 
-import GetPremium from "./UI/buttons/getpremium";
-
 import Searchbar from "./UI/misc/searchbar";
 
 export{
@@ -14,7 +12,6 @@ export{
     NavBar, 
     Settings,
     NavMenu,
-    GetPremium,
     Searchbar,
     Languages
 }
