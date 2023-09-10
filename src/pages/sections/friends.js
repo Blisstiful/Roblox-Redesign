@@ -1,6 +1,8 @@
 import React from "react";
 import style from "./friends.module.css";
 
+import MediaQuery from "react-responsive";
+
 const Friends = () =>{
     let amountoffriends = 32;
 
@@ -60,69 +62,73 @@ const Friends = () =>{
                 activity="[ALPHA] The Scorch"
                 />
 
-                <Friend
-                status="Online"
-                headshot="https://tr.rbxcdn.com/96e323f546e613b63ef9d7211eef48da/150/150/AvatarHeadshot/Png"
-                name="Nura"
-                link="google.com"
-                activity=""
-                />
+                <MediaQuery minWidth={768}>
 
-                <Friend
-                status="Online"
-                headshot="https://tr.rbxcdn.com/ccf999660bc35b2a9d956afa5dfb4775/150/150/AvatarHeadshot/Png"
-                name="Doggo"
-                link="google.com"
-                activity=""
-                />
-                
-                <Friend
-                status="Online"
-                headshot="https://tr.rbxcdn.com/a0d923bbee6ed5ebb980f90c6b1900d1/150/150/AvatarHeadshot/Png"
-                name="Jacob"
-                link="google.com"
-                activity=""
-                />
+                    <Friend
+                    status="Online"
+                    headshot="https://tr.rbxcdn.com/96e323f546e613b63ef9d7211eef48da/150/150/AvatarHeadshot/Png"
+                    name="Nura"
+                    link="google.com"
+                    activity=""
+                    />
 
-                <Friend
-                status="Offline"
-                headshot="https://tr.rbxcdn.com/b765646a3c44006e89237d8c1faf4619/150/150/AvatarHeadshot/Png"
-                name="Renee"
-                link="google.com"
-                activity=""
-                />
-                
-                <Friend
-                status="Offline"
-                headshot="https://tr.rbxcdn.com/1b44ae1e8d8d61e07453e967b841e1f2/150/150/AvatarHeadshot/Png"
-                name="Willow"
-                link="google.com"
-                activity=""
-                />
+                    <Friend
+                    status="Online"
+                    headshot="https://tr.rbxcdn.com/ccf999660bc35b2a9d956afa5dfb4775/150/150/AvatarHeadshot/Png"
+                    name="Doggo"
+                    link="google.com"
+                    activity=""
+                    />
+                    
+                    <Friend
+                    status="Online"
+                    headshot="https://tr.rbxcdn.com/a0d923bbee6ed5ebb980f90c6b1900d1/150/150/AvatarHeadshot/Png"
+                    name="Jacob"
+                    link="google.com"
+                    activity=""
+                    />
 
-                <Friend
-                status="Offline"
-                headshot="https://tr.rbxcdn.com/7fe23178651f5f85a6e526c5acf9ba2b/150/150/AvatarHeadshot/Png"
-                name="Lucy"
-                link="google.com"
-                activity=""
-                />
-                
-                <Friend
-                status="Offline"
-                headshot="https://tr.rbxcdn.com/79f0ff47955b603f0b58b03df540484f/150/150/AvatarHeadshot/Png"
-                name="Zen"
-                link="google.com"
-                activity=""
-                />
+                    <Friend
+                    status="Offline"
+                    headshot="https://tr.rbxcdn.com/b765646a3c44006e89237d8c1faf4619/150/150/AvatarHeadshot/Png"
+                    name="Renee"
+                    link="google.com"
+                    activity=""
+                    />
+                    
+                    <Friend
+                    status="Offline"
+                    headshot="https://tr.rbxcdn.com/1b44ae1e8d8d61e07453e967b841e1f2/150/150/AvatarHeadshot/Png"
+                    name="Willow"
+                    link="google.com"
+                    activity=""
+                    />
 
-                <Friend
-                status="Offline"
-                headshot="https://tr.rbxcdn.com/1d793289e70e8b4a7ca50dc16e00b0e5/150/150/AvatarHeadshot/Png"
-                name="Typhoon"
-                link="google.com"
-                activity=""
-                />
+                    <Friend
+                    status="Offline"
+                    headshot="https://tr.rbxcdn.com/7fe23178651f5f85a6e526c5acf9ba2b/150/150/AvatarHeadshot/Png"
+                    name="Lucy"
+                    link="google.com"
+                    activity=""
+                    />
+                    
+                    <Friend
+                    status="Offline"
+                    headshot="https://tr.rbxcdn.com/79f0ff47955b603f0b58b03df540484f/150/150/AvatarHeadshot/Png"
+                    name="Zen"
+                    link="google.com"
+                    activity=""
+                    />
+
+                    <Friend
+                    status="Offline"
+                    headshot="https://tr.rbxcdn.com/1d793289e70e8b4a7ca50dc16e00b0e5/150/150/AvatarHeadshot/Png"
+                    name="Typhoon"
+                    link="google.com"
+                    activity=""
+                    />
+
+                </MediaQuery>
 
             </ul>
 

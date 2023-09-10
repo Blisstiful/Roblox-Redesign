@@ -16,103 +16,6 @@ main{
     margin: 1rem 0 0.75rem 1rem;
 }
 
-#games{
-    display: flex;
-    flex-direction: column;
-    width: calc(100% - 20rem);
-}
-
-/* GAMES HEADER */
-
-#games h2{
-    margin-bottom: 0.5rem;
-}
-
-#games-nav{
-    display: flex;
-}
-
-#games h2, #games-nav button{
-    margin-left: 1rem;
-}
-
-#games-nav button{
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-.current{
-    text-decoration: underline;
-    text-decoration-color: var(--text-color);
-}
-
-/* LIST ITEMS OF GAMES */
-
-#games-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    justify-items: center;
-    column-gap: 0.5rem;
-}
-
-#games-list li{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 17.5rem;
-    width: 10rem;
-    cursor: pointer;
-}
-
-.game-title{
-    height: 16%;
-    width: 100%;
-    margin-bottom: 0.5rem;
-    font-size: 1.2em;
-    font-weight: 500;
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-#games-list li img{
-    height: 10em;
-    width: 10em;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
-    object-fit: cover;
-}
-
-#games-list li div{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.temp-two{
-    display: flex;
-    align-items: center;
-    font-size: 1.1em;
-}
-
-.players-icon, .likes-icon{
-    margin-right: 0.25em;
-    height: 16px;
-    width: 16px;
-    background-repeat: no-repeat;
-    background-size: 32px auto;
-    background-image: url(https://images.rbxcdn.com/87b4f6103befbe2c1e9c13eb9d7064db-common_sm_dark_12032018.svg);
-}
-
-.players-icon{
-    background-position: 0 -48px;
-}
-
-.likes-icon{
-    background-position: 0 -32px;
-}
-
 @media (max-width: 768px){
     #content{
         margin-left: 0;
@@ -125,14 +28,5 @@ main{
 
     #home-tab{
         order: 2;
-    }
-
-    #games{
-        order: 4;
-        width: calc(100% - 1rem);
-    }
-
-    #games-list{
-        width: 100%;
     }
 }

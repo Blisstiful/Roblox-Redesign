@@ -136,14 +136,61 @@
         /*will fix l8r :3*/
     }
 
+    #friends-list span{
+        margin-bottom: 0.5rem;
+    }
+
+    #friends img{
+        height: 5rem;
+        width: 5rem;
+        margin: 0;
+    }
+
+    .Playing::after, .Online::after, .Developing::after, .Offline::after{
+        height: 40px;
+        width: 40px;
+        right: -0.5rem;
+    }
+
+    /*below down so that it corresponds with the place in the url-
+    it's in*/
+
+    .Developing::after{
+        background-position: 0 -40px;
+    }
+    
+    .Online::after{
+        background-position: 0 -80px;
+    }
+
+    #friends h2, #friends-categories{
+        margin-left: 1rem;
+    }
+
     #friends-list{
         display: flex;
         flex-direction: row;
-        margin-top: 0;
+        margin-top: 2rem;
     }
 
     #friends-list li{
-        width: 1fr;
+        height: 100%;
         margin-bottom: 0;
+    }
+
+    #friends-list li a{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #friends-list li div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #friends-list li p{
+        text-align: center;
     }
 }

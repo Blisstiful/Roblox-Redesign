@@ -14,6 +14,7 @@ x
 
 ## Technologies/Libraries: (WIP name)
 - React
+- React-Responsive
 - Github Pages
 - FontAwesome (Free)
 
