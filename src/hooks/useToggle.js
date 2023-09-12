@@ -2,23 +2,15 @@
 TASKS:
 *Whatever clicked element is, make the target element open/close based on whatever its state is
 */
-import { useState, useEffect } from "react";
 
-const useToggle = (clickedElement, targetElement) =>{
-	//complicated way of just setting state, setState, to true and 
-	//"recording" that
-	let [state, setState] = useState(true);
+import { useState } from "react";
 
-	useEffect(() =>{
-		if (state === false){
-			//insert code to show element here
-			setState(true) //set state to true
-		}else if(state === true){
-			//insert code to hide element here
-			setState(false) //set state to false
-		};
-	});
+const sidebarToggle = document.querySelector("navbar_nav-menu-button__1w7dY");
+const sidebar = document.querySelector("navmenu_nav-menu__jq2GA");
 
+const useToggle = (clickedElement) =>{
+
+	console.log("Clicked Element is: " + clickedElement.id);
 }
 
 export default useToggle;

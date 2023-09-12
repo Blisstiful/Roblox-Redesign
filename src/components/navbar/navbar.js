@@ -1,5 +1,7 @@
-import React from "react";
+import {React, useRef } from "react";
 import style from "./navbar.module.css";
+
+import SkipToMain from "../accessibility/skiptomain";
 import useToggle from "../../hooks/useToggle";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,14 +13,22 @@ const NavBar = ({src, alt, username, link}) =>{
     username = "vdelaide"
     link = "google.com"
 
+    let inputRef = useRef(null)
+    let sidebarToggle = inputRef.current;
+    console.log(sidebarToggle + " is sidebar toggle")
+
     return(
         <header>
+
+            <SkipToMain />
 
             <nav id={style["navbar"]}>
 
                 <div id={style["left"]}>
 
-                    <button id={style["nav-menu-button"]}>
+                    <button id={style["nav-menu-button"]}
+                    onClick={useToggle(sidebarToggle)}
+                    ref={inputRef}>
                         <FontAwesomeIcon icon={faBars} />
                     </button>
 

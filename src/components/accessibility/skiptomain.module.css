@@ -1,0 +1,6 @@
+#skip{
+    all: unset;
+    left: 50%;
+    position: absolute;
+    transform: translateY(-100%);
+}
