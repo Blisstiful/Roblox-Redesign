@@ -1,21 +1,38 @@
-import {React, useRef } from "react";
+import {React, useEffect, useState } from "react";
 import style from "./navbar.module.css";
 
+import UserData from "../../user-data.json";
+
 import SkipToMain from "../accessibility/skiptomain";
-import useToggle from "../../hooks/useToggle";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const NavBar = ({src, alt, username, link}) =>{
-    src = "https://tr.rbxcdn.com/449bd812e14a5bd26d24ddc5197cfc94/150/150/AvatarHeadshot/Png"
-    alt = "alttext"
-    username = "vdelaide"
-    link = "google.com"
+const NavBar = () =>{
+    //Userdata
+    const Username = UserData.username;
+    const Src = UserData["profile-picture"];
+    const Avatarlink = UserData["avatar-link"];
 
-    let inputRef = useRef(null)
-    let sidebarToggle = inputRef.current;
-    console.log(sidebarToggle + " is sidebar toggle")
+    //Toggling sidebar
+    let [toggle, setToggle] = useState(false);
+
+    const handleToggle = () =>{
+        console.log("clicked :3")
+        console.log(toggle)
+
+        if (toggle === true){
+            setToggle(false)
+        } else if (toggle === false){
+            setToggle(true)
+        }
+
+    };
+
+    useEffect(() =>{
+        const navmenuToggle = document.querySelector(`#${style["nav-menu-button"]}`)
+        navmenuToggle.addEventListener("click", handleToggle)
+    });
 
     return(
         <header>
@@ -26,9 +43,7 @@ const NavBar = ({src, alt, username, link}) =>{
 
                 <div id={style["left"]}>
 
-                    <button id={style["nav-menu-button"]}
-                    onClick={useToggle(sidebarToggle)}
-                    ref={inputRef}>
+                    <button id={style["nav-menu-button"]}>
                         <FontAwesomeIcon icon={faBars} />
                     </button>
 
@@ -42,10 +57,10 @@ const NavBar = ({src, alt, username, link}) =>{
 
                 <div id={style["right"]}>
 
-                    <a id={style["headshot"]} href={link}>
+                    <a id={style["headshot"]} href={Avatarlink}>
 
-                        <img src={src} alt={alt} />
-                        <p><i>@</i>{username}</p>
+                        <img src={Src} alt="" />
+                        <p><i>@</i>{Username}</p>
 
                     </a>
 

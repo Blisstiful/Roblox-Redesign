@@ -1,0 +1,35 @@
+{
+	"username": "vdelaide",
+	"profile-picture": "https://tr.rbxcdn.com/449bd812e14a5bd26d24ddc5197cfc94/150/150/AvatarHeadshot/Png",
+	"amount-of-friends": 32,
+	"avatar-link": "https://github.com/vdelaide",
+	"friends": [
+		{
+			"friend-username": "MapleAtMorning",
+			"friend-headshot": "https://tr.rbxcdn.com/cc94269d588e2c14dd97bd598b67972f/150/150/AvatarHeadshot/Png",
+			"friend-activity": "eat drywall",
+			"friend-status": "playing"
+		},
+		{
+			"friend-username": "Empire",
+			"friend-headshot": "https://tr.rbxcdn.com/37a595ce091a394f51fbaea11ce49b82/150/150/AvatarHeadshot/Png",
+			"friend-activity": "[ALPHA] The Scorch",
+			"friend-status": "playing"
+		}
+	],
+	"games": [
+		{
+			"game-name": "Phantom Forces",
+			"game-thumbnail": "https://tr.rbxcdn.com/f7b2d115353bd891c7613d84741565fc/150/150/Image/Png",
+			"game-ratio": 92,
+			"game-playing": 153
+		},
+		{
+			"game-name": "Dingus",
+			"game-thumbnail": "https://tr.rbxcdn.com/b8da030dbc5591691f34b1aa134bb1b5/150/150/Image/Png",
+			"game-alt": "Thumbnail for the game Dingus",
+			"game-ratio": 89,
+			"game-playing": 2950
+		}
+	]
+}

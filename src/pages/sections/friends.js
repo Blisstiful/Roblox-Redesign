@@ -1,16 +1,45 @@
 import React from "react";
 import style from "./friends.module.css";
 
+import UserData from "../../user-data.json";
+
 import MediaQuery from "react-responsive";
 
 const Friends = () =>{
-    let amountoffriends = 32;
+    const AmountOfFriends = UserData["amount-of-friends"];
+    const FriendsData = UserData.friends;
+
+    let displayFriends = [];
+    let friendCounter = 0;
+
+    const handleFriendsData = (friend) =>{
+        
+        friendCounter += 1;
+
+        //Make a react component for each friend in #friends-list
+        displayFriends.push(
+            <Friend
+            status={friend["friend-status"]}
+            headshot={friend["friend-headshot"]}
+
+            name={friend["friend-username"]}
+            link="https://google.com"
+
+            activity={friend["friend-activity"]}
+            key={friendCounter} /*Used for react to update a singular elem instead of the whole list*/
+            />
+        )
+
+        return displayFriends;
+    }
+
+    FriendsData.forEach(handleFriendsData)
 
     return(
         <section id={style["friends"]}>
 
             <h2>Friends 
-                <span>({amountoffriends})</span>
+                <span>({AmountOfFriends})</span>
             </h2>
 
             <ul id={style["friends-categories"]}>
@@ -22,21 +51,7 @@ const Friends = () =>{
 
             <ul id={style["friends-list"]}> 
 
-                <Friend
-                status="Playing"
-                headshot="https://tr.rbxcdn.com/cc94269d588e2c14dd97bd598b67972f/150/150/AvatarHeadshot/Png"
-                name="MapleAtMorning"
-                link="google.com"
-                activity="eat drywall"
-                />
-
-                <Friend
-                status="Playing"
-                headshot="https://tr.rbxcdn.com/37a595ce091a394f51fbaea11ce49b82/150/150/AvatarHeadshot/Png"
-                name="Empire"
-                link="google.com"
-                activity="[ALPHA] The Scorch"
-                />
+                {displayFriends}
 
                 <Friend
                 status="Playing"

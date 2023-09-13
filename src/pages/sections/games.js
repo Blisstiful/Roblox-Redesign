@@ -1,7 +1,49 @@
 import React from "react";
 import style from "./games.module.css";
 
+import UserData from "../../user-data.json";
+
 const Games = () =>{
+	const GamesData = UserData.games; //not getting into the displaying diff gameslist yet
+	
+	let displayGames = [];
+	let gameCounter = 0;
+
+	const formatPlayCounter = () =>{
+		let finalCount = 0;
+
+		const lookup = [
+			{ value: 1, symbol: "" },
+			{ value: 1e3, symbol: "k" },
+			{ value: 1e6, symbol: "M" },
+		];
+		/*https://stackoverflow.com/questions/9461621/format-a-number-as-2-5k-if-a-thousand-or-more-otherwise-900 */
+
+		return finalCount;
+	}
+	
+	//Game Data & Handling
+	const handleGameData = (game) =>{
+		gameCounter += 1;
+
+		displayGames.push(
+			<Game
+				title={game["game-name"]}
+				thumbnail={game["game-thumbnail"]}
+
+				alt="placeholder for now"
+				likes={game["game-ratio"].toString().concat("%")}
+
+				playing={formatPlayCounter(game["game-playing"])}
+				key={gameCounter}
+			/>
+		)
+
+		return displayGames;
+	}
+
+	GamesData.forEach(handleGameData)
+
 	return(
 		<section id={style["games"]}>
 
@@ -22,23 +64,8 @@ const Games = () =>{
 				instead of having a button up top. like what roblox does rn but with favorites,
 				recommended, etc. etc.*/}
 
-				<Game
-				title="Phantom Forces"
-				thumbnail="https://tr.rbxcdn.com/f7b2d115353bd891c7613d84741565fc/150/150/Image/Png"
-				alt="Logo for Phantom Forces"
-				likes="92%"
-				playing="5.2k"
-				/>
+				{displayGames}
 
-				<Game
-				title="Dingus"
-				thumbnail="https://tr.rbxcdn.com/b8da030dbc5591691f34b1aa134bb1b5/150/150/Image/Png"
-				alt="Logo for Phantom Forces"
-				likes="89%"
-				playing="2.9k"
-				/>
-
-				
 				<Game
 				title="Apocalypse Rising 2"
 				thumbnail="https://tr.rbxcdn.com/64698343fd5865efa5b9ce6379d233c3/150/150/Image/Png"
@@ -47,7 +74,6 @@ const Games = () =>{
 				playing="3.5k"
 				/>
 
-				
 				<Game
 				title="Blood & Iron"
 				thumbnail="https://tr.rbxcdn.com/c4b841cc67b18df8de8ff368ad9182ac/150/150/Image/Png"
@@ -56,7 +82,6 @@ const Games = () =>{
 				playing="578"
 				/>
 
-				
 				<Game
 				title="Verdant Moon"
 				thumbnail="https://tr.rbxcdn.com/db3b8b7e909857f468e2366198f38be6/150/150/Image/Png"
