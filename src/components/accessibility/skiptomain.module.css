@@ -1,6 +1,21 @@
 #skip{
-    all: unset;
-    left: 50%;
+    z-index: 3;
+    display: flex;
     position: absolute;
-    transform: translateY(-100%);
+    left: 40%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 1rem 2.5rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transform: translateY(-10rem);
+    transition: transform 0.25s;
+}
+
+#skip:focus{
+    transform: translateY(1rem);
 }

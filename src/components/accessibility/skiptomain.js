@@ -3,7 +3,7 @@ import style from "./skiptomain.module.css";
 
 const SkipToMain = () =>{
     return(
-        <a href="#main" id={style["skip"]} tabIndex="1">Skip to main content</a>
+        <a href="#main" id={style["skip"]} tabIndex="1">Skip to Main Content</a>
     );
 };
 
