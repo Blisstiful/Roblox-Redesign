@@ -1,4 +1,4 @@
-import {React, useEffect, useState } from "react";
+import {React, useEffect, useState, useContext } from "react";
 import style from "./navbar.module.css";
 
 import UserData from "../../user-data.json";
@@ -15,24 +15,30 @@ const NavBar = () =>{
     const Avatarlink = UserData["avatar-link"];
 
     //Toggling sidebar
-    let [toggle, setToggle] = useState(false);
-
-    const handleToggle = () =>{
-        console.log("clicked :3")
-        console.log(toggle)
-
-        if (toggle === true){
-            setToggle(false)
-        } else if (toggle === false){
-            setToggle(true)
-        }
-
-    };
+    let [toggle, setToggle] = useState(true);
 
     useEffect(() =>{
-        const navmenuToggle = document.querySelector(`#${style["nav-menu-button"]}`)
-        navmenuToggle.addEventListener("click", handleToggle)
-    });
+        const navmenuToggle = document.querySelector(`#${style["nav-menu-button"]}`);
+
+        const handleToggle = () =>{
+            console.log("clicked :3");
+            console.log(toggle);
+    
+            if (toggle === true){
+                setToggle(false)
+            } else if (toggle === false){
+                setToggle(true)
+            };
+    
+        };
+
+        navmenuToggle.addEventListener("click", handleToggle);
+
+        //cleans up the eventlistener so no doubling
+        return () => {
+            navmenuToggle.removeEventListener("click", handleToggle);
+        };
+    }, [toggle]);
 
     return(
         <header>

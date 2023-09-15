@@ -5,8 +5,6 @@ import * as All from "../components/index";
 import Friends from "./sections/friends";
 import Games from "./sections/games";
 
-//CHANGE TEMP-TWO AND TEMP-ONE :D
-
 const Home = () =>{
     return(
 

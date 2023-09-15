@@ -9,14 +9,14 @@
     background-color: #191b1d;
 }
 
-#nav-menu div{
+#nav-menu nav{
     display: flex;
     flex-direction: column;
     margin: 0.75em 0 0.75em 1em;
     width: 50%;
 }
 
-#nav-menu div hr{
+#nav-menu nav hr{
     all: unset;
     margin-bottom: 0.5em;
     height: 0.1rem;
@@ -24,7 +24,7 @@
     background-color: var(--dark-grey);
 }
 
-#nav-menu div a{
+#nav-menu nav a{
     display: flex;
     align-items: center;
     margin-bottom: 0.15em;

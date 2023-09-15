@@ -32,7 +32,7 @@ Mobile Version:
 - Conditional rendering
 - ServerSide rendering
 - How to deploy and maintain a React app to Github Pages
-- How to create React Hooks
+- How to create and use React Hooks
 - How to use and format data into React components
 
 ### Disclaimer:

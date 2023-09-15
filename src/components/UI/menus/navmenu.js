@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useContext } from "react";
 import style from "./navmenu.module.css";
 
 const NavMenu = () =>{
@@ -7,7 +7,7 @@ const NavMenu = () =>{
             {/*should be em*/}
 
             {/* OVERVIEW */}
-            <div>
+            <nav>
 
                 <h4>Overview</h4>
                 <hr />
@@ -22,10 +22,10 @@ const NavMenu = () =>{
                     Profile
                 </a>
 
-            </div>
+            </nav>
 
             {/* SOCIAL */}
-            <div>
+            <nav>
 
                 <h4>Social</h4>
                 <hr />
@@ -45,10 +45,10 @@ const NavMenu = () =>{
                     Groups
                 </a>
 
-            </div>
+            </nav>
 
             {/* ACCOUNT */}
-            <div>
+            <nav>
 
                 <h4>Account</h4>
                 <hr />
@@ -73,10 +73,10 @@ const NavMenu = () =>{
                     Transactions
                 </a>
 
-            </div>
+            </nav>
 
             {/* OFFICIAL */}
-            <div>
+            <nav>
 
                 <h4>Official</h4>
                 <hr />
@@ -96,7 +96,7 @@ const NavMenu = () =>{
                     Giftcards
                 </a>
 
-            </div>
+            </nav>
 
         </aside>
     );
