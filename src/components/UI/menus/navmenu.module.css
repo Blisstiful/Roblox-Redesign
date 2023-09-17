@@ -1,4 +1,5 @@
 #nav-menu{
+    z-index: 2;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -9,14 +10,14 @@
     background-color: #191b1d;
 }
 
-#nav-menu nav{
+#nav-menu section{
     display: flex;
     flex-direction: column;
     margin: 0.75em 0 0.75em 1em;
     width: 50%;
 }
 
-#nav-menu nav hr{
+#nav-menu section hr{
     all: unset;
     margin-bottom: 0.5em;
     height: 0.1rem;
@@ -24,7 +25,7 @@
     background-color: var(--dark-grey);
 }
 
-#nav-menu nav a{
+#nav-menu section a{
     display: flex;
     align-items: center;
     margin-bottom: 0.15em;

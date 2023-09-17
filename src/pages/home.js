@@ -10,11 +10,9 @@ const Home = () =>{
 
         <React.Fragment>
 
-            <All.NavBar />
+            <All.Header />
 
             <main id={style["main"]}>
-
-                <All.NavMenu />
 
                 <section id={style["content"]}>
 
