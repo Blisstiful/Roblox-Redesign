@@ -8,12 +8,17 @@ main{
 #content{
     display: flex;
     flex-direction: column;
-    margin-left: var(--navmenu-width);
-    width: calc(calc(100% - var(--navmenu-width)) - 1rem);
+    width: 100%;
 }
 
 #home-title{
     margin: 1rem 0 0.75rem 1rem;
+}
+
+#home-tab{
+    display: flex;
+    justify-content: space-evenly;
+    width: calc(100% - calc(var(--friendslist-width) + 1rem));
 }
 
 @media (max-width: 768px){

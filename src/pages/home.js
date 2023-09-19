@@ -20,7 +20,9 @@ const Home = () =>{
 
                     <section id={style["home-tab"]}>
 
+                        <All.News />
                         <All.Searchbar hasSearchNav={true}/>
+                        <All.Chat />
 
                     </section>
 
