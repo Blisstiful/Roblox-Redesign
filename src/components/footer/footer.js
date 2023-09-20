@@ -8,19 +8,19 @@ const Footer = () =>{
         <footer>
 
             <ul id={style["footer-list"]}>
-                <li><a href="https://google.com">About Us</a></li>
-                <li><a href="https://google.com">Jobs</a></li>
+                <li><a href="/Roblox-Redesign/interest">About Us</a></li>
+                <li><a href="/Roblox-Redesign/interest">Jobs</a></li>
 
-                <li><a href="https://google.com">Blog</a></li>
-                <li><a href="https://google.com">Parents</a></li>
+                <li><a href="/Roblox-Redesign/interest">Blog</a></li>
+                <li><a href="/Roblox-Redesign/interest">Parents</a></li>
 
-                <li><a href="https://google.com">Gift Cards</a></li>
-                <li><a href="https://google.com">Help</a></li>
+                <li><a href="/Roblox-Redesign/interest">Gift Cards</a></li>
+                <li><a href="/Roblox-Redesign/interest">Help</a></li>
 
-                <li><a href="https://google.com">Terms</a></li>
-                <li><a href="https://google.com">Accessibility</a></li>
+                <li><a href="/Roblox-Redesign/interest">Terms</a></li>
+                <li><a href="/Roblox-Redesign/interest">Accessibility</a></li>
 
-                <li><a href="https://google.com">Privacy</a></li>
+                <li><a href="/Roblox-Redesign/interest">Privacy</a></li>
 
             </ul>
 

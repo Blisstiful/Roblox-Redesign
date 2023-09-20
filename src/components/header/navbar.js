@@ -23,11 +23,11 @@ const NavBar = () =>{
                     <FontAwesomeIcon icon={faBars} />
                 </button>
 
-                <a href="google.com">Discover</a>
-                <a href="google.com">Develop</a>
+                <a href="/Roblox-Redesign/interest">Discover</a>
+                <a href="/Roblox-Redesign/interest">Develop</a>
                 
-                <a href="google.com">Market</a>
-                <a href="google.com">Robux</a>
+                <a href="/Roblox-Redesign/interest">Market</a>
+                <a href="/Roblox-Redesign/interest">Robux</a>
 
             </div>
 

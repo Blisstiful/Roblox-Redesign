@@ -7,7 +7,9 @@ const Games = () =>{
 	const GamesData = UserData.games; //not getting into the displaying diff gameslist yet
 
 	const ContinueData = GamesData[0].continue;
+	// eslint-disable-next-line
 	const FavoritesData = GamesData[1].favorites;
+	// eslint-disable-next-line
 	const RecommendedData = GamesData[2].recommended;
 	
 	let displayGames = [];
@@ -82,7 +84,7 @@ const Game = ({title, thumbnail, alt, likes, playing}) =>{
 
         <li>
 
-			<a href="https://google.com">
+			<a href="/Roblox-Redesign/interest">
 
 				<img src={thumbnail} alt={alt}/>
 				<p className={style["game-title"]}>{title}</p>

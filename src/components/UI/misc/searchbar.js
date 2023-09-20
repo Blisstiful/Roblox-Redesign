@@ -27,7 +27,7 @@ const Searchbar = ({hasSearchNav}) =>{
                     <li><button>Market</button></li>
 
                 </ul>)
-                : (<div></div>)
+                : (<></>)
             }
 
         </div>

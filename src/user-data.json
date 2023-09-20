@@ -3,6 +3,7 @@
 	"profile-picture": "https://tr.rbxcdn.com/449bd812e14a5bd26d24ddc5197cfc94/150/150/AvatarHeadshot/Png",
 	"amount-of-friends": 32,
 	"avatar-link": "https://github.com/vdelaide",
+	"chat-notifications": 22,
 	"friends": [
 		{
 			"friend-username": "MapleAtMorning",
@@ -15,6 +16,11 @@
 			"friend-headshot": "https://tr.rbxcdn.com/37a595ce091a394f51fbaea11ce49b82/150/150/AvatarHeadshot/Png",
 			"friend-activity": "[ALPHA] The Scorch",
 			"friend-status": "Playing"
+		}
+	],
+	"chat": [
+		{
+
 		}
 	],
 	"games": [
