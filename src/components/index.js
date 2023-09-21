@@ -7,7 +7,7 @@ import Settings from "./UI/menus/settings";
 import Languages from "./UI/menus/languages";
 
 import Searchbar from "./UI/misc/searchbar";
-import News from "./UI/misc/news";
+import Hometabs from "./UI/misc/hometabs";
 
 export{
     Header,
@@ -16,5 +16,5 @@ export{
     Settings,
     Languages,
     Searchbar,
-    News
+    Hometabs
 }

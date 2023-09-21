@@ -12,13 +12,20 @@ main{
 }
 
 #home-title{
-    margin: 1rem 0 0.75rem 1rem;
+    margin: 1rem 0 1rem 1rem;
 }
 
 #home-tab{
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    height: fit-content;
+    margin-bottom: 1rem;
     width: calc(100% - calc(var(--friendslist-width) + 1rem));
+}
+
+#home-tab :nth-child(1){
+    margin-left: 1rem;
 }
 
 @media (max-width: 768px){
@@ -32,6 +39,7 @@ main{
     }
 
     #home-tab{
+        display: none;
         order: 2;
     }
 }

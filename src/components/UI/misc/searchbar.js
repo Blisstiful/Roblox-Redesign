@@ -6,7 +6,7 @@ import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 
 const Searchbar = ({hasSearchNav}) =>{
     return(
-        <div id={style["container-fr-fr"]}>
+        <div id={style["searchbar-holder"]}>
 
             <div id={style["input-group"]}>
 

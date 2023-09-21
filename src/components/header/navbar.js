@@ -1,6 +1,8 @@
 import {React } from "react";
 import style from "./navbar.module.css";
 
+import Searchbar from "../UI/misc/searchbar";
+
 import UserData from "../../user-data.json";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -32,6 +34,8 @@ const NavBar = () =>{
             </div>
 
             <div id={style["right"]}>
+
+                <Searchbar hasSearchNav={false}/>
 
                 <a id={style["headshot"]} href={Avatarlink}>
 

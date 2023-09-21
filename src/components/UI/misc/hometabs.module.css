@@ -1,0 +1,22 @@
+#news{
+	display: flex;
+	align-items: center;
+	margin: 0 0.5rem;
+	padding: 1rem 2rem;
+	height: 2rem;
+	border-radius: 0.5rem;
+    border: 2.5px solid var(--light-grey-2);
+	background-color: transparent;
+	color: var(--light-grey-2);
+}
+
+#news svg{
+	margin-right: 0.5rem;
+	height: 2.5rem;
+	width: 2.5rem;
+	color: inherit;
+}
+
+#news h4{
+	color: inherit;
+}
