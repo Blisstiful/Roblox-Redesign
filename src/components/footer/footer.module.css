@@ -52,11 +52,12 @@ footer hr{
     }
 
     #footer-list{
+        flex-wrap: wrap;
         margin-bottom: 0.5em;
-        width: 100%;
+        width: 85%;
     }
 
     #footer-list a{
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 }

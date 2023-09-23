@@ -14,12 +14,10 @@ const Footer = () =>{
                 <li><a href="/Roblox-Redesign/interest">Blog</a></li>
                 <li><a href="/Roblox-Redesign/interest">Parents</a></li>
 
-                <li><a href="/Roblox-Redesign/interest">Gift Cards</a></li>
                 <li><a href="/Roblox-Redesign/interest">Help</a></li>
-
                 <li><a href="/Roblox-Redesign/interest">Terms</a></li>
-                <li><a href="/Roblox-Redesign/interest">Accessibility</a></li>
 
+                <li><a href="/Roblox-Redesign/interest">Accessibility</a></li>
                 <li><a href="/Roblox-Redesign/interest">Privacy</a></li>
 
             </ul>

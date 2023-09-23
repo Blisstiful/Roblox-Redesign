@@ -6,6 +6,7 @@
 
 #languages-btn{
 	display: flex;
+	position: relative;
 	align-items: center;
 	padding: 0.5rem;
 	height: 1.5rem;
@@ -16,6 +17,12 @@
 
 #languages-btn:hover{
 	outline-color: rgb(255, 255, 255);
+}
+
+#languages-btn button{
+	position: absolute;
+	height: 100%;
+	width: 100%;
 }
 
 .world-icon{

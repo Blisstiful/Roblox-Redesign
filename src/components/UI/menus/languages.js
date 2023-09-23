@@ -17,9 +17,9 @@ const Languages = () =>{
 
             </ul>
 
-            <button id={style["languages-btn"]}>
-                {/*Probably a bad practice to have that button like that
-                change tmrw */}
+            <span id={style["languages-btn"]}>
+
+                <button></button>
 
                 <i className={style["world-icon"]}></i>
 
@@ -27,7 +27,7 @@ const Languages = () =>{
 
                 <FontAwesomeIcon icon={faAngleDown}/>
 
-            </button>
+            </span>
 
         </div>
     );

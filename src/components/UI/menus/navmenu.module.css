@@ -5,8 +5,6 @@
     position: fixed;
     height: 100vh;
     width: var(--navmenu-width);
-    /*will most likely need to fix the pos
-     and do some magic to this elem*/
     background-color: #191b1d;
 }
 
@@ -97,10 +95,4 @@
 
 .transactions-icon{
     background-position: -28px 0;
-}
-
-@media (max-width: 768px){
-    #nav-menu{
-        display: none;
-    }
 }

@@ -15,19 +15,6 @@ main{
     margin: 1rem 0 1rem 1rem;
 }
 
-#home-tab{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    height: fit-content;
-    margin-bottom: 1rem;
-    width: calc(100% - calc(var(--friendslist-width) + 1rem));
-}
-
-#home-tab :nth-child(1){
-    margin-left: 1rem;
-}
-
 @media (max-width: 768px){
     #content{
         margin-left: 0;
@@ -36,10 +23,5 @@ main{
 
     #home-title{
         order: 1;
-    }
-
-    #home-tab{
-        display: none;
-        order: 2;
     }
 }
