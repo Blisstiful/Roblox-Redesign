@@ -39,3 +39,5 @@ Mobile Version:
 
 I don't own any of the images or icons presented in this
 webpage. All credit goes to Roblox.com for the icons, and all credit goes to the creators of the thumbnails for the game. You can find the specific names for those games in user-data.json
+
+All buttons except for the navmenu button are duds.

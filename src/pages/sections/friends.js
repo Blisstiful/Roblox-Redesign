@@ -3,8 +3,6 @@ import style from "./friends.module.css";
 
 import UserData from "../../user-data.json";
 
-import MediaQuery from "react-responsive";
-
 const Friends = () =>{
     const AmountOfFriends = UserData["amount-of-friends"];
     const FriendsData = UserData.friends;
@@ -35,6 +33,17 @@ const Friends = () =>{
 
     FriendsData.forEach(handleFriendsData)
 
+    //mobile code for displaying friends
+    if (window.innerWidth < 768){
+
+        if (displayFriends.length > 4){
+
+            displayFriends.length = 4;
+
+        }
+
+    }
+
     return(
         <section id={style["friends"]}>
 
@@ -43,6 +52,7 @@ const Friends = () =>{
             </h2>
 
             <ul id={style["friends-categories"]}>
+
                 <li><button className={style["current"]}>All</button></li>
                 <li><button>Online</button></li>
                 <li><button>Starred</button></li>
@@ -52,95 +62,6 @@ const Friends = () =>{
             <ul id={style["friends-list"]}> 
 
                 {displayFriends}
-
-                <Friend
-                status="Playing"
-                headshot="https://tr.rbxcdn.com/79ab362692dc467029dfc714a607e7c0/150/150/AvatarHeadshot/Png"
-                name="Sox"
-                activity="booger simulator"
-                />
-
-                <Friend
-                status="Developing"
-                headshot="https://tr.rbxcdn.com/c87b00c9cb51d3dc42271ba42fef6aba/150/150/AvatarHeadshot/Png"
-                name="Async"
-                activity="test_world1"
-                />
-                
-                <Friend
-                status="Developing"
-                headshot="https://tr.rbxcdn.com/355faeb61fccbc1d4af3291dbf0ce78e/150/150/AvatarHeadshot/Png"
-                name="Silentu"
-                activity="[ALPHA] The Scorch"
-                />
-
-                <MediaQuery minWidth={768}>
-
-                    <Friend
-                    status="Online"
-                    headshot="https://tr.rbxcdn.com/96e323f546e613b63ef9d7211eef48da/150/150/AvatarHeadshot/Png"
-                    name="Nura"
-
-                    activity=""
-                    />
-
-                    <Friend
-                    status="Online"
-                    headshot="https://tr.rbxcdn.com/ccf999660bc35b2a9d956afa5dfb4775/150/150/AvatarHeadshot/Png"
-                    name="Doggo"
-
-                    activity=""
-                    />
-                    
-                    <Friend
-                    status="Online"
-                    headshot="https://tr.rbxcdn.com/a0d923bbee6ed5ebb980f90c6b1900d1/150/150/AvatarHeadshot/Png"
-                    name="Jacob"
-
-                    activity=""
-                    />
-
-                    <Friend
-                    status="Offline"
-                    headshot="https://tr.rbxcdn.com/b765646a3c44006e89237d8c1faf4619/150/150/AvatarHeadshot/Png"
-                    name="Renee"
-
-                    activity=""
-                    />
-                    
-                    <Friend
-                    status="Offline"
-                    headshot="https://tr.rbxcdn.com/1b44ae1e8d8d61e07453e967b841e1f2/150/150/AvatarHeadshot/Png"
-                    name="Willow"
-
-                    activity=""
-                    />
-
-                    <Friend
-                    status="Offline"
-                    headshot="https://tr.rbxcdn.com/7fe23178651f5f85a6e526c5acf9ba2b/150/150/AvatarHeadshot/Png"
-                    name="Lucy"
-
-                    activity=""
-                    />
-                    
-                    <Friend
-                    status="Offline"
-                    headshot="https://tr.rbxcdn.com/79f0ff47955b603f0b58b03df540484f/150/150/AvatarHeadshot/Png"
-                    name="Zen"
-
-                    activity=""
-                    />
-
-                    <Friend
-                    status="Offline"
-                    headshot="https://tr.rbxcdn.com/1d793289e70e8b4a7ca50dc16e00b0e5/150/150/AvatarHeadshot/Png"
-                    name="Typhoon"
-
-                    activity=""
-                    />
-
-                </MediaQuery>
 
             </ul>
 

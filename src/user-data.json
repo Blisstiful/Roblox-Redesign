@@ -16,6 +16,72 @@
 			"friend-headshot": "https://tr.rbxcdn.com/37a595ce091a394f51fbaea11ce49b82/150/150/AvatarHeadshot/Png",
 			"friend-activity": "[ALPHA] The Scorch",
 			"friend-status": "Playing"
+		},
+		{
+			"friend-username": "Sox",
+			"friend-headshot": "https://tr.rbxcdn.com/79ab362692dc467029dfc714a607e7c0/150/150/AvatarHeadshot/Png",
+			"friend-activity": "booger simulator",
+			"friend-status": "Playing"
+		},
+		{
+			"friend-username": "Async",
+			"friend-headshot": "https://tr.rbxcdn.com/c87b00c9cb51d3dc42271ba42fef6aba/150/150/AvatarHeadshot/Png",
+			"friend-activity": "test_world1",
+			"friend-status": "Developing"
+		},
+		{
+			"friend-username": "Silentu",
+			"friend-headshot": "https://tr.rbxcdn.com/355faeb61fccbc1d4af3291dbf0ce78e/150/150/AvatarHeadshot/Png",
+			"friend-activity": "[ALPHA] The Scorch",
+			"friend-status": "Developing"
+		},
+		{
+			"friend-username": "Nura",
+			"friend-headshot": "https://tr.rbxcdn.com/96e323f546e613b63ef9d7211eef48da/150/150/AvatarHeadshot/Png",
+			"friend-activity": "",
+			"friend-status": "Online"
+		},
+		{
+			"friend-username": "Doggo",
+			"friend-headshot": "https://tr.rbxcdn.com/ccf999660bc35b2a9d956afa5dfb4775/150/150/AvatarHeadshot/Png",
+			"friend-activity": "",
+			"friend-status": "Online"
+		},
+		{
+			"friend-username": "Jacob",
+			"friend-headshot": "https://tr.rbxcdn.com/a0d923bbee6ed5ebb980f90c6b1900d1/150/150/AvatarHeadshot/Png",
+			"friend-activity": "",
+			"friend-status": "Online"
+		},
+		{
+			"friend-username": "Renee",
+			"friend-headshot": "https://tr.rbxcdn.com/b765646a3c44006e89237d8c1faf4619/150/150/AvatarHeadshot/Png",
+			"friend-activity": "",
+			"friend-status": "Offline"
+		},
+		{
+			"friend-username": "Willow",
+			"friend-headshot": "https://tr.rbxcdn.com/1b44ae1e8d8d61e07453e967b841e1f2/150/150/AvatarHeadshot/Png",
+			"friend-activity": "",
+			"friend-status": "Offline"
+		},
+		{
+			"friend-username": "Lucy",
+			"friend-headshot": "https://tr.rbxcdn.com/7fe23178651f5f85a6e526c5acf9ba2b/150/150/AvatarHeadshot/Png",
+			"friend-activity": "",
+			"friend-status": "Offline"
+		},
+		{
+			"friend-username": "Zen",
+			"friend-headshot": "https://tr.rbxcdn.com/79f0ff47955b603f0b58b03df540484f/150/150/AvatarHeadshot/Png",
+			"friend-activity": "",
+			"friend-status": "Offline"
+		},
+		{
+			"friend-username": "Typhoon",
+			"friend-headshot": "https://tr.rbxcdn.com/1d793289e70e8b4a7ca50dc16e00b0e5/150/150/AvatarHeadshot/Png",
+			"friend-activity": "",
+			"friend-status": "Offline"
 		}
 	],
 	"chat": [

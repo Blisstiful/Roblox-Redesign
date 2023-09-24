@@ -17,6 +17,7 @@ TODO:
     --light-grey: #3f4245;
     --light-grey-2: #717479;
     --light-grey-3: #e5e6e7;
+    --light-grey-4: #bdbebe;
 
     --text-color: rgb(255, 255, 255);
 
@@ -39,6 +40,7 @@ TODO:
 html{
     height: 100%;
     width: 100%;
+    overflow-x: hidden; /*just in case anything is overflowing*/
 }
 
 body{

@@ -8,6 +8,8 @@ import UserData from "../../user-data.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
+import MediaQuery from "react-responsive";
+
 const NavBar = () =>{
     //Userdata
     const Username = UserData.username;
@@ -35,7 +37,9 @@ const NavBar = () =>{
 
             <div id={style["right"]}>
 
-                <Searchbar hasSearchNav={false}/>
+                <MediaQuery minWidth={768}>
+                    <Searchbar hasSearchNav={false}/>
+                </MediaQuery>
 
                 <a id={style["headshot"]} href={Avatarlink}>
 
