@@ -84,11 +84,8 @@ const Friend = ({status, headshot, name, activity}) =>{
 
                     <p className={style["username"]}>
                         <i>@</i>{name}
-                        {/*Could be a greyed out star to add the star feature. Next to the name*/}
                     </p>
-
-                    {/*if status/activity is offline this should be
-                    invisible*/}
+                    
                     <p className={style["activity"]}>
                         <i>{status}: </i>{activity}
                     </p>

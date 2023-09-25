@@ -12,7 +12,7 @@
 	height: 1.5rem;
 	width: 15rem;
 	color: #bdbebe;
-	outline: 1.5px solid #bdbebe; /*color scheme for this is too distracting*/
+	outline: 1.5px solid #bdbebe;
 }
 
 #languages-btn:hover{

@@ -16,8 +16,6 @@ const NavBar = () =>{
     const Src = UserData["profile-picture"];
     const Avatarlink = UserData["avatar-link"];
 
-    //Toggling sidebar
-
     return(
         <nav id={style["navbar"]}>
 

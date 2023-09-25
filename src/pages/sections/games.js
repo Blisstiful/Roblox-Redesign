@@ -4,13 +4,9 @@ import style from "./games.module.css";
 import UserData from "../../user-data.json";
 
 const Games = () =>{
-	const GamesData = UserData.games; //not getting into the displaying diff gameslist yet
+	const GamesData = UserData.games;
 
 	const ContinueData = GamesData[0].continue;
-	// eslint-disable-next-line
-	const FavoritesData = GamesData[1].favorites;
-	// eslint-disable-next-line
-	const RecommendedData = GamesData[2].recommended;
 	
 	let displayGames = [];
 	let gameCounter = 0;
@@ -30,7 +26,7 @@ const Games = () =>{
 		});
 		
 		return item ? (num / item.value).toFixed(digits).replace(rx, "$1") + item.symbol : "0";
-		/*https://stackoverflow.com/questions/9461621/format-a-number-as-2-5k-if-a-thousand-or-more-otherwise-900 */
+		/* https://stackoverflow.com/questions/9461621/format-a-number-as-2-5k-if-a-thousand-or-more-otherwise-900 */
 	}
 	
 	//Game Data & Handling
