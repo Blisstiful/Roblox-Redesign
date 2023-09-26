@@ -11,6 +11,7 @@ footer{
 
 #footer-list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 1.5rem;
     height: fit-content;
@@ -50,6 +51,7 @@ footer hr{
 @media (max-width: 768px) {
     footer{
         margin: 0;
+        height: fit-content;
         width: 100%;
     }
 
@@ -67,4 +69,9 @@ footer hr{
     #footer-list a{
         font-size: 1.2em;
     }
+
+    #disclaimer{
+        margin: 0 0.5rem;
+    }
+
 }

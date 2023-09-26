@@ -30,16 +30,16 @@ const Languages = () =>{
     return(
         <div id={style["languages"]}>
 
-            <ul showmenu={toggle}>
-
-                <li>English</li>
-                <li>Español</li>
-                <li>Deutsch</li>
-                <li>Français</li>
-                <li>Italiano</li>
-
-            </ul>
-
+            {toggle && ( // conditionally render the language menu
+                <ul id={style["language-menu"]}>
+                    <li>English</li>
+                    <li>Español</li>
+                    <li>Deutsch</li>
+                    <li>Français</li>
+                    <li>Italiano</li>
+                </ul>
+            )}
+            
             <span id={style["languages-btn"]}>
 
                 <button id={style["interactive-button"]}></button>

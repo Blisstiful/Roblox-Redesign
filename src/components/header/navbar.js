@@ -25,31 +25,56 @@ const NavBar = () =>{
                     <FontAwesomeIcon icon={faBars} />
                 </button>
 
-                <a href="/Roblox-Redesign/interest">Discover</a>
-                <a href="/Roblox-Redesign/interest">Develop</a>
-                
-                <a href="/Roblox-Redesign/interest">Market</a>
-                <a href="/Roblox-Redesign/interest">Robux</a>
+                <ul id={style["quick-nav"]}>
+
+                    <li>
+                        <a href="/Roblox-Redesign/interest">Discover</a>
+                    </li>
+
+                    <li>
+                        <a href="/Roblox-Redesign/interest">Develop</a>
+                    </li>
+
+                    <li>
+                        <a href="/Roblox-Redesign/interest">Market</a>
+                    </li>
+
+                    <li>
+                        <a href="/Roblox-Redesign/interest">Robux</a>
+                    </li>
+
+                </ul>
 
             </div>
 
-            <div id={style["right"]}>
+            <MediaQuery minWidth={1080}>
 
-                <MediaQuery minWidth={768}>
+                <div id={style["middle"]}>
+
                     <Searchbar hasSearchNav={false}/>
-                </MediaQuery>
+
+                </div>
+                
+            </MediaQuery>
+
+            <div id={style["right"]}>
 
                 <a id={style["headshot"]} href={Avatarlink}>
 
                     <img src={Src} alt="" />
-                    <p><i>@</i>{Username}</p>
 
+                    <MediaQuery minWidth={530}>
+                        <p><i>@</i>{Username}</p>
+                    </MediaQuery>
+                    
                 </a>
 
-                <i id={style["setting"]}></i>
+                <MediaQuery minWidth={768}>
+                    <i id={style["setting"]}></i>
+                </MediaQuery>
 
             </div>
-
+                
         </nav>
 
     );

@@ -34,7 +34,7 @@
 /* ICONS */
 
 .house-icon, .profile-icon, .messages-icon, .friends-icon, .groups-icon, .avatar-icon, .inventory-icon, .trade-icon,
-.blog-icon, .store-icon, .giftcard-icon, .transactions-icon{
+.blog-icon, .store-icon, .giftcard-icon, .transactions-icon, .settings-icon{
     display: inline-block;
     margin-right: 0.25rem;
     height: 28px;
@@ -95,4 +95,8 @@
 
 .transactions-icon{
     background-position: -28px 0;
+}
+
+.settings-icon{
+    background-position: 0 -84px;
 }

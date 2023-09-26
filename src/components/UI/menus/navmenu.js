@@ -1,6 +1,8 @@
 import { React } from "react";
 import style from "./navmenu.module.css";
 
+import MediaQuery from "react-responsive";
+
 const NavMenu = ({showNav}) =>{
     return(
         <>{showNav && 
@@ -72,6 +74,19 @@ const NavMenu = ({showNav}) =>{
                         <span className={style["transactions-icon"]}></span>
                         Transactions
                     </a>
+
+                    <MediaQuery maxWidth={768}>
+
+                        {/*
+                        no grey icon provided by roblox, might look annoying
+                        sorries!
+                        */}
+                        <a href="/Roblox-Redesign/interest">
+                            <span className={style["settings-icon"]}></span>
+                            Settings
+                        </a>
+
+                    </MediaQuery>
 
                 </section>
 
