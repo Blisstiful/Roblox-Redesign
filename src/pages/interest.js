@@ -1,10 +1,9 @@
 import { React } from "react";
-import style from "./interest.module.css";
 
 const Interest = () =>{
 	return(
 		<main>
-			<section id={style["interest"]}>
+			<section>
 
 				<h1>
 					Woah woah! Slow down.<br />

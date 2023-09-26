@@ -1,7 +1,8 @@
 #languages{
+	position: relative;
 	margin-right: 1rem;
 	height: 2.5rem;
-	width: 15rem;
+	width: fit-content;
 }
 
 #languages-btn{
@@ -19,7 +20,7 @@
 	outline-color: rgb(255, 255, 255);
 }
 
-#languages-btn button{
+#interactive-button{
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -48,16 +49,26 @@
 }
 
 #languages ul{
-	display: none;
+	display: flex;
 	flex-direction: column;
 	position: absolute;
+	/*bottom 2 are a cool way to make a 
+	dropdown menu above the button :)
+	just wanted to share it becuase it seems cool 
+	honestly pretty simple*/
+	top: auto;
+	bottom: 100%;
 	height: fit-content;
-	width: 15rem;
+	width: 100%;
+	background-color: var(--dark-grey-2);
+	border-radius: 0.25rem 0.25rem 0 0;
 }
 
 #languages ul li{
+	padding: 0.5rem 0.75rem;
 	width: 100%;
 	font-weight: 500;
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 	color: inherit;
+	cursor: pointer;
 }
