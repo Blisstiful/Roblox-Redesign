@@ -39,9 +39,7 @@ All buttons except for the navmenu and language buttons are duds.
 ## Screenshots:
 
 ### Desktop Version:  
-![Desktop Version](https://i.ibb.co/FKd0Wb2/Screenshot-2023-09-26-113345.png)
-![Desktop Version with NavMenu](https://i.ibb.co/gmSyH4j/Screenshot-2023-09-26-113609.png)
-![Desktop Version with Footer](https://i.ibb.co/x5xVZDv/Screenshot-2023-09-26-113620.png)
+Unfortunately, there is no screenshot for the desktop version. However, there is a live demo at https://vdelaide.github.io/Roblox-Redesign/
 
 ### Mobile Version:  
 ![Mobile Version](https://i.ibb.co/cNrwjbf/Screenshot-2023-09-26-113650.png)
